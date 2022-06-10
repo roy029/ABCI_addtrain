@@ -1,6 +1,8 @@
 import random
 import numpy as np
 import torch
+import json
+import csv
 
 # 乱数シードの設定
 def set_seed(seed):
@@ -13,6 +15,22 @@ def set_seed(seed):
 set_seed(1234)
 
 # TODO:テキストデータから読み出す
+fname = ""
+
+with open(fname) as f:
+  for cols in csv.reader(f, delimiter='\t'):
+    print(cols)
+  with open(f'random_{fname}.csv') as f2:
+    writer = csv.writer(f2, delimiter='\t')
+    
+    for data in json.load(f):
+    # if fname.endswith(".csv"):
+    #   pass      
+    # elif fname.endswith(".tsv"):
+    #   pass
+    # elif fname.endswith(".jsonl"):
+    #   pass
+
 
 typ = "120 p 30 o 90 u 10 n 30 m 110 t 20 s 80 l 0 c 20 z" #事前学習用のテキストデータを入れる
 
