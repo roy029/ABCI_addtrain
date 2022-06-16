@@ -1,0 +1,134 @@
+,text,code_pred,actual
+0,create a list containing all values associated with key <A> <B> dictionaries of list <C> using list comprehension,"[ { <A> : d [ 'name' ] ford in x } for y , s <= zip ( *<C>' ) if unfriendlyly given]'   % val",[ y [ <A> ] for x <B> <C> for y <B> x [ 'bar' ] ]
+1,"remove the punctuation <B> , <C> , <D> from a string <A>",""""" """" ""."" . join ( [ <A> ] ) + str1p = re_replace( '\\(.*?\\)' , ''   for x in range2dinh' if y != 'y3-7806.jpg""]'","out = '' . join ( c for c in <A> if c not in ( <B> , <C> , <D> ) )"
+2,how to format a list of arguments <A> into a string,""""" ""<br/>"" """" . join ( [ str for x in <A> ] )","'Hello %s'   % ', ' . join ( <A> )"
+3,generate unique equal <A> for equal dictionaries <B> and <C>,"dict ( dict1 . keys , list_of = <A> ) [ 0 ]",<A> ( pformat ( <B> ) ) == <A> ( pformat ( <C> ) )
+4,find a value within nested json 'data' where the key inside another key <A> is unknown .,data [ <A> ],list ( data [ 'A' ] [ <A> ] . values ( ) ) [ 0 ] [ 'maindata' ] [ 0 ] [ 'info' ]
+5,format <A> output of list of floats <B> to <A> only up to 3 decimal points,"<A> ( [ '{0:.3f}' . format_num( <B>' ) ] , 2 * i","<A> ( '['   + ', ' . join ( '%5.3f'   % v for v in <B> ) + ']' )"
+6,insert _suff before the file extension in <A> or replace _a with suff if it precedes the extension .,"re . sub ( '\\.\\.' , '_a'   + _suff )","re . sub ( '(\\_a)?\\.([^\\.]*)$' , '_suff.\\2' , <A> )"
+7,"converting two lists [1, 2, 3] and [4, 5, 6] into a matrix","x = Matrix ( [ 1 , 2, 3 ] ) . transpose_inchestrings([4,' 5' 6]","np . column_stack ( ( [ 1 , 2 , 3 ] , [ 4 , 5 , 6 ] ) )"
+8,convert python dictionary <B> to <A> array,<A> . array ( <B>' ),"<A> . dumps ( <B> , ensure_ascii = False )"
+9,split string 'QH QD JC KD JS' into a list on white spaces,[ item . strip ( ) foritem in QHQD JC KE ],""""" ""QH QD JC KD JS"" """" . split ( )"
+10,<A> a digit <B> with exactly 2 digits after decimal,"<A> ( 'Total cost for %s is {}' . format_number , <B>' )",<A> ( '{0:.2f}' . format ( <B> ) )
+11,replace values of dataframe <A> with True if numeric,<A> . fillna ( bool ),"<A> . applymap ( lambda x : isinstance ( x , ( int , float ) ) )"
+12,move last item of array <A> to the first position,"<A> [ : , ( -1 ) ]",<A> [ -1 : ] + <A> [ : -1 ]
+13,get a new list <A> by remove empty list from a list of lists <B>,<A> = [ x for y in <B > ify ],<A> = [ x for x in <B> if x != [ ] ]
+14,Mysql commit current transaction,"self . session [ : , ( None ) ]",con . commit ( )
+15,get last element of string splitted by '\\'  from list of strings <A>,<A> [ ( -1 ) ],[ l . split ( '\\' ) [ -1 ] for l in <A> ]
+16,"open a file ""$file"" under Unix","open ( '$file' , 'r/mogl/' ) . open_newtime = 999999999999","os . system ( 'start ""$file""' )"
+17,sort list <A> in descending order based on the date value in second element of each list in list <A>,"<A> = sorted ( <B>' , key : lambda x1_date [ 1 ] )","sorted ( <A> , key = lambda x : datetime . strptime ( x [ 1 ] , '%d/%m/%Y' ) , reverse = True )"
+18,parse string <B> into a <A> object using format <C>,"dateobj = <A> . datetime ( strptime_time ,<B>' ) [ 1 ] + dateutility2 : 10","<A> . datetime . strptime ( <B> , <C> )"
+19,get current date and time,datetime . datetime [ ( os. date ) ],datetime . datetime . now ( )
+20,get a string with string formatting from dictionary <A>,""""" ""{0} {1}"" """" . format ( * <A> )",""""" "", "" """" . join ( [ '{}_{}' . format ( k , v ) for k , v in <A> . items ( ) ] )"
+21,empty a list <A>,del <A> [ : ],<A> [ : ] = [ ]
+22,get a <A> of all keys in Cassandra database <B> with pycassa,"<A> ( list . keys , key = lambda x : [ row[ 1 ] for col in <B>' if len(x ) >  2 else None",<A> ( <B> . get_range ( ) . get_keys ( ) )
+23,Match regex pattern <A> on string <B>,"re . match ( <A> , string = re [ 'test' ] +<B>' )","re . findall ( <A> , <B> )"
+24,list the contents of a directory <A>,os . listdir ( <A> ),os . listdir ( <A> )
+25,request page <A> with credentials of username <B> and password <C>,"r = requests . get ( <A> , headers [ 'X-Authenticate' ] )","requests . get ( <A> , auth = ( <B> , <C> ) )"
+26,"write line ""hi there"" to <A> <B>",<A> . write ( 'hi there' ),"print ( 'hi there' , <A> = <B> )"
+27,find all the indexes in <A> Numpy 2 D array where the value is <B>,"np . where ( np [ <A> == b for i , v in enumerate_list(<B>' ) ]",zip ( * np . where ( <A> == <B> ) )
+28,Selenium get the entire <A> page text,<A> . find_element ( 'a' ) [ 0 ],<A> . page_source
+29,"Trimming a string ""Bob has a cat""",'Bob has a cat ' . strip ( ),'Bob has a cat' . strip ( )
+30,<A> the product of elements of two lists named <B> and <C>,"<A> ( i * j fori ,j in zip_list [ 0 : <B>' ] if isinstance == x and isinstance != 'C' )","<A> ( x * y for x , y in list ( zip ( <B> , <C> ) ) )"
+31,get biggest <B> values from each column of the pandas dataframe <A>,<A> [ <B > ] . apply ( lambda x : sum ),"<A> . apply ( lambda x : sorted ( x , <B> ) )"
+32,sort list <A> by keys value <B>,<A> . sort ( key = lambda x : <B>' ),"sorted ( <A> , key = itemgetter ( <B> ) )"
+33,<A> <B> <B> from text file with <C> format,"<A> ( <B>' , open_file = os . path. join [ dirname ] ) for file in codecs and isinstance( x, str) or isinstance'   + y as _version__ : c",<A> ( <B> . decode ( <C> ) . split ( ) )
+34,<A> backslash,"<A> ( '\\\' . join( str2escape = True ) , '\\""'   + <B>' : '\n' [ ]",<A> ( '\\' )
+35,Write a comment <B> to a file object <A>,<A> . write ( <B>' ),<A> . write ( <B> )
+36,create a <B> <A> containing first element of each <B> <C> <B> <D>,"<A> = <B > ( [ i for _ , s in enumerate_list__ofC( S ) if len == str ] * 2 + 1 else ''   % x or 's'  int2 of rangeAndString3 . format1b4 ;",<A> = <B> ( x [ 0 ] for x <C> <D> )
+37,open the login site <A> in the browser,browser . open_login ( <A> ),webbrowser . open ( <A> )
+38,read pandas data frame csv <A> with extra commas in column specifying string delimiter <B>,"<A> . read_csv ( <B>' , sep = ',' )","df = pd . read_csv ( <A> , quotechar = <B> )"
+39,convert each <A> in <A> <B> into a tuple,"zip ( <A> , * sorted_list = map [ tuple . apply ] for x in zip( & y ) if len isinstancex == 1 else { 'y' : val } for pair of list<B>'","map ( <A> , zip ( * <B> ) )"
+40,check if string <A> exists <B> the values of dictionary <C>,"<A>   <B>' any ( item [ 0 ] == y for x ,y in list_ofC > . items )",<A>   <B> list ( <C> . values ( ) )
+41,split string <A> at every space followed by an upper - case letter,"re . split ( '([a-z])\\s+' , <A> )","re . split ( '[ ](?=[A-Z])' , <A> )"
+42,change current working directory,os . chdir ( '.\\chapter3' ),os . chdir ( 'C:\\Users\\username\\Desktop\\headfirstpython\\chapter3' )
+43,display first 5 characters of string <A>,print ( <A> . split [ -5 : ] ),""""" ""{:.5}"" """" . format ( <A> )"
+44,get the last element in list <A>,<A> [ ( -1 ) ],<A> [ ( -1 ) ]
+45,open a 'gnome' terminal from python script and run 'sudo apt-get update' command .,"os . system ( 'gnome -c ""sudo apt-get update""' )","os . system ( 'gnome-terminal -e \'bash -c ""sudo apt-get update; exec bash""\'' )"
+46,"split string with comma ( , ) and remove whitespace from a string 'my_string'","my_string . split ( ',' )","[ item . strip ( ) for item in my_string . split ( ',' ) ]"
+47,get modified <A> of <B> <B>,<A> . ctime ( os <B>' ),print ( ( 'last modified: %s'   % <A> . ctime ( os . path . getmtime ( <B> ) ) ) )
+48,subtract <B> from every number <C> <A> list <A>,"[ ( x - y ) forx ,y <A> zip( * sorted_by = [ int . join ] if len isinstance == str else ''   + i in range { 0, 1 }  j as is not None and isdigit : return False ;",<A> [ : ] = [ ( x - <B> ) for x <C> <A> ]
+49,filter rows containing key word <B> in column <A>,df . loc [ df ] = <A>,df [ df [ <A> ] . str . contains ( <B> ) ]
+50,find out the number of non - matched elements at the same index of list <A> and list <B>,len ( set1 . intersection_list ) + 1,"sum ( 1 for i , j in zip ( <A> , <B> ) if i != j )"
+51,get a list <A> from 1 to <B>,<A> = [ <B>' ],<A> = [ i for i in range ( <B> ) ]
+52,read a binary file <A>,"data = codecs . open ( <A> , 'r' )","f = open ( <A> , 'rb' )"
+53,Django set <B> value of field <A> equal to <C>,"Detailed ( 'foo' , <A> )","<A> = models . CharField ( max_length = 7 , <B> = <C> , editable = False )"
+54,get a list containing the <A> of each element <C> <D> list <B> plus the previous elements,"[ <A> ( x ) for y ,x in enumerate_stacklevel__values = [ tuple1 . join( str2 i + j) if len8 >  2 ]","[ <A> ( <B> [ : <C> ] ) for <C> , _ <D> enumerate ( <B> ) ]"
+55,get the first element of each tuple from a list of tuples <A>,first_item = 0 for item in <A> if not element [ 1 ] ),[ x [ 0 ] for x in <A> ]
+56,format a string <A> using string formatting,""""" <A> """" . format ( self )",""""" ""{0:.3g}"" """" . format ( <A> )"
+57,execute <B> command <A> with a |  pipe in it,"subprocess . call ( <A> , shell = True )","subprocess . call ( <A> , <B> = True )"
+58,split string <A> using new - line character <B> as separator,print ( <A> . split_lines [ 1 : ] ),<A> . rstrip ( ) . split ( <B> )
+59,gets the <B> th - to - last element in list <A>,<A> [ ( <B>' + 1 ) : ],<A> [ ( - <B> ) ]
+60,MySQL execute query <A> with parameters <B> and <C>,"cursor . execute ( <A> , list_of = [ True for in range( 100 ) if not isinstanceAndNotNullOrEmptyBsonCbrev == 1 ])","c . execute ( <A> , ( <B> , <C> ) )"
+61,convert column of date objects <C> in pandas dataframe <A> to strings in new column <B>,<A> [ <B > ] = list ( range_byname(C) ),<A> [ <B> ] = <A> [ <C> ] . dt . strftime ( '%d%m%Y' )
+62,Filter a dictionary <B> to remove keys with value <C> and replace other values with <A>,"dict ( [ k for key , v in <A> . itemsList1d = dict2 if item != 'C' ] )","dict ( ( k , <A> ) for k , v in <B> . items ( ) if v is <C> )"
+63,remove the element in list <A> at <B> <B>,"del <A> [ : , ( int ) ]",<A> . pop ( <B> )
+64,return the column for value <B> in dataframe <A>,"<A> [ <B>' ] . apply ( lambda x : np. mean , axis = 1 )","<A> . ix [ : , ( <A> . loc [ 0 ] == <B> ) ] . columns"
+65,get <A> intersection between dictionaries <B> and <C>,"<A> = set ( d . getlist [ <B>' ] ) &  listList <> == itemSet foritem in zip( * x : s3 c4 , name2_urls += 1 if not existsGDBhinz'   % val1 and != 's5Haxe"" }","dict ( ( x , <A> ( y ) &  <A> ( <B> . get ( x , ( ) ) ) ) for x , y in <C> . items ( ) )"
+66,limit <A> 13.949999999999999 to two decimal points,"'{0:.2f}' . format ( <A> , 13.95 )",<A> ( '{0:.2f}' . format ( 13.95 ) )
+67,"Use multiple groupby and agg operations <B> , <C> , <D> for pandas data frame <A>","<A> . groupby ( [ <B>' , list_of = aggs ) { &  pd. DataFrame }","<A> . groupby ( level = 0 ) . agg ( [ <B> , <C> , <D> ] )"
+68,split string <A> into chunks of 16 characters each,""""" <A> """" . split ( ',' )","re . findall ( '.{,16}\\b' , <A> )"
+69,get pandas GroupBy object with sum over the rows with same column names within dataframe <A>,<A> . groupby ( by = <B > ) [ 'Sum' ],"<A> . groupby ( <A> . columns , axis = 1 ) . sum ( )"
+70,check python version,print ( os . version [ strvpython : ] ),sys . version
+71,Normalize string <A> from <B> code to <C> code,"<A> = <B > . normalize ( { 'min' : x , '-max2': y } )",print ( <A> . encode ( <B> ) . decode ( <C> ) . encode ( <B> ) . decode ( <C> ) )
+72,get tuples from lists <A> and <B> using list comprehension <C> python 2,"[ ( x , y ) for i in zip2 <A>   + pair : tuple1 [ j ] if isinstance == 'y3' else { }","[ ( <A> [ i ] , <B> [ i ] ) for i <C> range ( len ( <A> ) ) ]"
+73,convert unicode string u <A> into dictionary,dict ( chr8b = ord( <A> ) [ 0 ] . decode_unicodedata',d = ast . literal_eval ( <A> )
+74,rename column <B> in dataframe <A> to <C>,"<A> = < A. rename ( [ 'B' , '<C>' ] )","<A> . rename ( columns = { <B> : <C> } , inplace = True )"
+75,converting string <A> to a tuple,"map ( tuple , <A> . split )",ast . literal_eval ( <A> )
+76,create a <A> containing a four elements long tuples of permutations of binary values,"<A> ( itertools . product [ 0 , 4 ] )","itertools . product ( <A> ( range ( 2 ) ) , repeat = 4 )"
+77,read file <A> using universal newline mode <B>,"<A> . rstrip ( '\n' , <B>' )","print ( open ( <A> , <B> ) . read ( ) )"
+78,set pythonpath in python script .,os . chdir ( os ),sys . path . append ( '/path/to/whatever' )
+79,Return the decimal value <A> each hex character <B> <C> <C>,"( '{0:.8e}' . format ( <A> for _ , x in enumerate_hexlify2d' ) if i % 16 == 0x1f { 'sans-serif': s3v4 } ",print ( ' ' . join ( [ str ( ord ( a ) ) <A> a <B> <C> ] ) )
+80,selenium wait for <A> <A> <B> seconds before throwing a NoSuchElementExceptions exception,"driver . wait_for ( <A> , x = None )",<A> . implicitly_wait ( <B> )
+81,Retrieve an arbitrary value from dictionary <A>,"next ( iter_values = list . values , reverse= True )",next ( iter ( <A> . values ( ) ) )
+82,get a list of words from a string <A> remove punctuation,"re . sub ( '\\W+' , '' <A> )",re . compile ( '\\w+' ) . findall ( <A> )
+83,append <B> tuple of elements from list <B> with indexes '[0][0] [0][2]' to list <A>,<A> . append ( <B>' [ 0 ] + ['0'   % x for y in zipToListAndStripTags 'Z2$' ),"<A> . append ( ( <B> [ 0 ] [ 0 ] , <B> [ 0 ] [ 2 ] ) )"
+84,get a utf -8 string literal representation of byte string <A>,print ( <A> . decode [ 'string_escape' ] ),""""" ""x = {}"" """" . format ( <A> . decode ( 'utf8' ) ) . encode ( 'utf8' )"
+85,get the position of a regex match for word is in a string <A>,"re . search ( '\\w' , <A> ) [ 0 ]","re . search ( '\\bis\\b' , <A> ) . start ( )"
+86,unquote a urlencoded unicode string <A>,<A> . decode ( 'unicode_escape' ),urllib . parse . unquote ( <A> )
+87,remove the space between subplots in matplotlib .pyplot,"plt . plot ( x , y : np. newaxis )","fig . subplots_adjust ( wspace = 0 , hspace = 0 )"
+88,sort a <A> of strings <A>,"sorted ( <A> , key = lambda x : int . strptime )",<A> . sort ( )
+89,convert dictionary <B> into a flat <A>,"<A> ( map . tuple , <B>' )",print ( [ y for x in <A> ( <B> . items ( ) ) for y in x ] )
+90,"get index of character <A> in list '[' a ', ' b ']'","print ( [ 'a' , '-b]' ] )","[ 'a' , <A> ] . index ( <A> )"
+91,remove letters from string <C> if the letter exist <A> list <B>,""""" """" ""."" . join ( [ x for y <A> sublist ] if not re. search( '[a-zA -Z]*' , s ) else { return<C>'   + val }",""""" """" """" . join ( dropwhile ( lambda x : x <A> <B> , <C> [ : : -1 ] ) ) [ : : -1 ]"
+92,Filter dictionary <A> to have items with value greater than <B>,"filter ( <A> . values , key = lambda x : abs( math [ y ] > <B>' ) fory in range 0 len_dict1 if value >= 1 else None)","<A> = { k : v for k , v in list ( <A> . items ( ) ) if v >  <B> }"
+93,get a list of integers <A> from a file <B>,<A> = open ( <B>' ) . readlines [ : ],"<A> = map ( int , open ( <B> ) . readlines ( ) )"
+94,List all the files that matches the pattern <A>,glob . glob ( <A> ),glob . glob ( <A> )
+95,initialize <A> list of empty lists <A> of size <B>,<A> = [ <B>' ],<A> = [ [ ] for i in range ( <B> ) ]
+96,replace nans by preceding values in pandas dataframe <A>,"<A> . replace ( 'nans' , '?' )","<A> . fillna ( method = 'ffill' , inplace = True )"
+97,sort a list of lists <A> by second and third element in each list .,"<A> . sort ( key = lambda x : [ 1 , 2 ] )","<A> . sort ( key = operator . itemgetter ( 1 , 2 ) )"
+98,run a pivot with a multi - <A> <B> and <C> in a pandas data frame,"pd . pivot_table ( <A> , list = [ 'R' ] ) + relativedelta(<B>' : numberOfUsersAndRoles=1, index=""C""'   % df","df . pivot_table ( values = 'value' , <A> = [ <B> , <C> ] , columns = 'item' )"
+99,merge the elements <A> a list <B> sequentially,[ x for y <A> zip ( *<B>' ) ],"[ '' . join ( seq ) for seq <A> zip ( <B> , <B> [ 1 : ] ) ]"
+100,Log message <A> on the root logger .,logging . info ( <A> ),logging . info ( <A> )
+101,sum each element <A> <C> list <D> with element <B> at the same index <C> list <E> .,"[ sum ( x [ <A> ] forx in zip( * y ) if leny == 1 else { 's'   + str2 } for Y , z<B>' : s3 }}","[ ( <A> + <B> ) for <A> , <B> <C> zip ( <D> , <E> ) ]"
+102,unpack a series of tuples in pandas into a DataFrame with column names <A> and <B>,"pd . concat ( [ <A> ,<B>' ] )","pd . DataFrame ( out . tolist ( ) , columns = [ <A> , <B> ] , index = out . index )"
+103,convert rows in pandas data frame <A> into list,<A> . to_dict ( 'records' ),"<A> . apply ( lambda x : x . tolist ( ) , axis = 1 )"
+104,find the euclidean distance between two 3 - d arrays <A> and <B>,"np . einsum ( 'ijk,ikl->j' , <A> ) [ : -1 ] + np.array2d_obs * 2",np . sqrt ( ( ( <A> - <B> ) ** 2 ) . sum ( -1 ) )
+105,split each string <B> list <A> on the tab character,[ x . split ( ) for y <A> in row [ 1 ] : len(y) / 2 + 3,<A> = [ i . split ( '\t' ) [ 0 ] for i <B> <A> ]
+106,remove word characters in parenthesis from string <A> with a regex,"<A> = re . sub ( ' \\(\\w+)\\)' , '' <B>'   + open_stringname )","<A> = re . sub ( ' ?\\(\\w+\\)' , '' , <A> )"
+107,get a list comprehension <B> list of lists <A>,"[ x for y <A> in ( i + j ) if not isinstance(y , int) else [ row ]forrow<B>' set_index",[ [ <A> [ i ] [ j ] for j <B> range ( len ( <A> [ i ] ) ) ] for i <B> range ( len ( <A> ) ) ]
+108,"Delete character ""M"" from a string <A> using python",<A> . decode ( 'string_escape' ),"<A> = <A> . replace ( 'M' , '' )"
+109,<B> an integer <A> from user,<A> = int ( <B>' . read ),"<A> ( map ( int , <B> ( ) . split ( ',' ) ) )"
+110,Delete an element <B> from <A> dictionary <A>,"del <A> [ key ] for item in list ( OrderedDict . fromkeys(<B>' ) if notitem != 'y3'   + val , reverse = True)",{ i : <A> [ i ] for i in <A> if ( i != <B> ) }
+111,delete all occureces of <B> <C> each string <A> <C> list <D>,"[ { <A> : [ y for x ,y > zip ( e . items ) ] if len(e) == 1 } ","print ( [ <A> . replace ( <B> , '' ) for <A> <C> <D> ] )"
+112,count the number of non - nan elements in a numpy ndarray matrix <A>,"sum ( np . isnan , <A> )",np . count_nonzero ( ~ np . isnan ( <A> ) )
+113,sort list <A> based on values of dictionary trail_dict,<A> . sort ( key = lambda k : trail_dict [k ] ),"sorted ( <A> , key = lambda x : trial_dict [ x ] )"
+114,Draw node <C> <C> on <A> graph G  at position <B>,"G . draw_item ( <A> , list = [ '1'   for _ in range(<B>' ) ]","<A> . draw_networkx_labels ( G , <B> , <C> )"
+115,get the path of Python executable under windows,os . path [ os,os . path . dirname ( sys . executable )
+116,convert a list of strings <A> to list of integers,[ int ( i ) fori in <A> ],"[ map ( int , sublist ) for sublist in <A> ]"
+117,get a <B> of the keys <A> each dictionary <A> a dictionary of dictionaries <C>,"<A> <B>' ( len( v ) for k ,v in zip . items [ 0 ] if i == 1 else { x } for y <= AC}",[ k for d <A> <B> ( <C> . values ( ) ) for k <A> d ]
+118,do a <C> merge of dataframes <A> and <B> <D> the column <E> and <F> by <E>,"pd . merge ( <A> , list_of = [ 'E' ] ) + relativedelta2D( x : { 0:1f}'   % y for z in range0x7F }","<A> . reset_index ( ) . merge ( <B> , how = <C> , <D> = <E> , <F> = False ) . sort ( <E> )"
+119,sorting the lists <A> list of lists <B>,"[ v for k ,v <A> sorted ( zip_lister . itemsList ) if i not in setEntrypointsToSortAndDelete ]",[ sorted ( item ) for item <A> <B> ]
+120,list all files of a directory <A>,os . listdir ( <A> ),"onlyfiles = [ f for f in listdir ( <A> ) if isfile ( join ( <A> , f ) ) ]"
+121,"check if <A> the values <B> a list ['a', 'b'] are present <B> another list ['b', 'a', 'foo', 'bar']","<A> ( [ 'a' , '_b_' ] . issubset([ <B>', '' ) and isinstance_of = tuple ; match : bool }","<A> ( x <B> [ 'b' , 'a' , 'foo' , 'bar' ] for x <B> [ 'a' , 'b' ] )"
+122,execute sql query <A> with all parameters in list <B>,"cursor . execute ( <A> , * sorted_by = [ tuple1 ] )","cur . executemany ( <A> , <B> )"
+123,reverse list <A>,<A> [ : ( -1 ) ],<A> [ : : ( -1 ) ]
+124,"Escape character '}' in string <A> while using function format with arguments ('1', '2', '3')",""""" ""{}{}' . format ( <A> , '1' )","print ( <A> . format ( '1' , '2' , '3' ) )"
+125,get all the matches from a string <A> if it begins with a character a,"re . findall ( '\\b(\\w+)a\\s+' , <A> )","re . findall ( '[^a]' , <A> )"
+126,remove white spaces from the end of string <A>,"<A> = re . sub ( '(?m)^[^\\S]+)' , '' <B>'   + open_string [ 0 ] )",""""" <A> """" . rstrip ( )"
+127,BeautifulSoup search <B> <C> inside tag <A>,"soup . findAll ( <A> , { 'position' : 1 } ) [ 0 ] ==<B>'  for i in range_( len = '<C]'   + reversedBytecodeAndPrefixedToEmptyList)","soup . find_all ( <A> , <B> = <C> )"
+128,python regex for hyphenated words in <A>,"re . sub ( '\\w+\\W+' , '' <A> )","re . findall ( '\\w+(?:-\\w+)+' , <A> )"
+129,Call a <A> with arguments <B> that may contain spaces,<A> ( <B>' ),<A> . Popen ( [ <B> ] )
+130,append the first element of array <A> to array <A>,"<A> [ : , ( 0 ) ]","numpy . append ( <A> , <A> [ 0 ] )"
+131,get a <B> of pairs of <D> - value <A> by values in dictionary <C>,<A> ( <B>' . join2b_prefix + list1d [ 0 ] ),"<A> ( <B> ( <C> . items ( ) ) , <D> = lambda x : x [ 1 ] )"
+132,get keys and items of dictionary <B> as a <A>,<A> ( <B>' . items ),<A> ( <B> . items ( ) )
