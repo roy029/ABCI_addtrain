@@ -6,7 +6,7 @@ import pandas as pd
 import re
 
 # 事前学習用テキストデータから読み出す --> SRC, TGTのペアになるtsvファイルを出力
-readfile = "/content/conala-mini.txt"
+readfile = "/content/conala-mini.txt" 
 writefile = "random_mask40.tsv"
 
 def get_token(text): #conalaのBleuからtokenizerを拝借
@@ -21,29 +21,29 @@ def get_token(text): #conalaのBleuからtokenizerを拝借
 def mask(typ_, typ_idx):
   typ_mask = []
   for index in typ_idx:
-    if random.random() < 0.4:       # 40% of the time, replace with [MASK]
-      masked_token = "[MASK]"
-      typ_mask.append(masked_token)
-    else:                                       # 10% of the time, keep original
-      if random.random() < 0.5: 
-        masked_token = typ_[index]
+    if random.random() < 0.4:       # Mask rate
+      if random.random() < 0.8:     # 40% of the time, replace with [MASK]
+        masked_token = "[MASK]"
         typ_mask.append(masked_token)
-      else:                                     # 10% of the time, replace with random word
+      elif random.random() > 0.8 and random.random() < 0.9: # 10% of the time, replace with random word
         masked_token = typ_[random.randint(0, len(typ_idx) - 1)]
         typ_mask.append(masked_token)
+      else: # 10% of the time, keep original
+        typ_mask.append(typ_[index])
+    else:
+      typ_mask.append(typ_[index])
   typ_mask = "".join(typ_mask)
-  return typ_mask #SRC, TGT
+  return typ_mask #SRC
 
 def main():
   with open(readfile) as f: #読み込み用ファイル
     with open(writefile, 'w') as f2:
       writer = csv.writer(f2, delimiter='\t')
       for line in f:
-        # print(line)
         token_ = get_token(line)
         token_idx = [idx for idx in range(len(token_))] 
         token_mask = mask(token_, token_idx)
         
-        src_tgt = [line, token_mask]
+        src_tgt = [token_mask, line]
         print(src_tgt)
         writer.writerow(src_tgt)
