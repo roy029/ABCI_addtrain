@@ -20,20 +20,32 @@ def get_token(text):
     return tokens
 
 def DAE(typ_, typ_idx):
-      typ_cor = []
+  typ_cor = []
   for index in typ_idx:
     if random.random() < 0.40:       # 破壊率
-      if random.random() < 1/4:     # 25%で除去
-        masked_token = "[MASK]"
-        typ_cor.append(masked_token)
+      if random.random() < 1/4:     # 25%で除去(ok)
+        pass
       elif random.random() > 1/4 and random.random() < 2/4: # 25%でシャッフル
-        masked_token = "[MASK]"
-        typ_cor.append(masked_token)
+        if index != len(typ_idx) and index != len(typ_idx)-1 and index != len(typ_idx)-2: #対象のindexと後ろ2つをシャッフル
+          shuffle_lst = [index, index+1, index+2]
+          tmp = random.sample(shuffle_lst, 3) #シャッフル
+          if tmp == shuffle_lst:  #高確率でシャッフルに失敗するので
+            tmp = random.sample(shuffle_lst, 3)
+          typ_cor.append(typ_[tmp[0]])
+          typ_cor.append(typ_[tmp[1]])
+          typ_cor.append(typ_[tmp[2]])
+          index += 2
+        elif index != len(typ_idx) and index != len(typ_idx)-1: #対象のindexとすぐ後ろをシャッフル
+          typ_cor.append(typ_[index+1])
+          typ_cor.append(typ_[index])
+          index += 1
+        else: #シャッフルを諦める
+          pass
       elif random.random() > 2/4 and random.random() < 3/4: # 25%でマスク(ok)
         masked_token = "[MASK]"
         typ_cor.append(masked_token)
       else:                                                  # 25%でニュータイプ
-        masked_token = "[MASK]"
+        masked_token = typ_[index]
         typ_cor.append(masked_token)
     else:
       typ_cor.append(typ_[index])
