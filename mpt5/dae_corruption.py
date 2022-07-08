@@ -19,34 +19,61 @@ def get_token(text):
     tokens = [t for t in text.split(' ') if t]
     return tokens
 
+def suff_3(shuffle_lst):
+  tmp = random.sample(shuffle_lst, 3)#シャッフル
+  if tmp == shuffle_lst:  #高確率でシャッフルに失敗するので
+    tmp = random.sample(shuffle_lst, 3)
+  return tmp
+
+def suff_2(shuffle_lst):
+  tmp = random.sample(shuffle_lst, 2)#シャッフル
+  if tmp == shuffle_lst:  #高確率でシャッフルに失敗するので
+    tmp = random.sample(shuffle_lst, 2)
+  return tmp
+
 def DAE(typ_, typ_idx):
+  stop = 1000000
+  stopp = 1000000
   typ_cor = []
   for index in typ_idx:
     if random.random() < 0.40:       # 破壊率
       if random.random() < 1/4:     # 25%で除去(ok)
         pass
       elif random.random() > 1/4 and random.random() < 2/4: # 25%でシャッフル
-        if index != len(typ_idx) and index != len(typ_idx)-1 and index != len(typ_idx)-2: #対象のindexと後ろ2つをシャッフル
-          shuffle_lst = [index, index+1, index+2]
-          tmp = random.sample(shuffle_lst, 3) #シャッフル
-          if tmp == shuffle_lst:  #高確率でシャッフルに失敗するので
-            tmp = random.sample(shuffle_lst, 3)
-          typ_cor.append(typ_[tmp[0]])
-          typ_cor.append(typ_[tmp[1]])
-          typ_cor.append(typ_[tmp[2]])
-          index += 2
-        elif index != len(typ_idx) and index != len(typ_idx)-1: #対象のindexとすぐ後ろをシャッフル
-          typ_cor.append(typ_[index+1])
-          typ_cor.append(typ_[index])
-          index += 1
-        else: #シャッフルを諦める
-          pass
+        if index == stop+1 or index == stop+2 or index == stopp+1:
+          continue
+        else:
+          if index !=  len(typ_idx) and index != len(typ_idx)-1 and index != len(typ_idx)-2:
+            shuffle_lst = [index, index+1, index+2]
+            shuffled_lst = suff_3(shuffle_lst)
+            typ_cor.append(typ_[shuffled_lst[0]])
+            typ_cor.append(typ_[shuffled_lst[1]])
+            typ_cor.append(typ_[shuffled_lst[2]])
+            stop = index
+            # print("現在のindex：", index, "shuffle_lst3：", shuffle_lst, "shuffle3結果：", shuffled_lst)
+          elif index == len(typ_idx)-2:
+            shuffle_lst = [index, index+1]
+            shuffled_lst = suff_2(shuffle_lst)
+            typ_cor.append(typ_[shuffled_lst[0]])
+            typ_cor.append(typ_[shuffled_lst[1]])
+            stopp = index
+            # print("現在のindex：", index, "shuffle_lst2：", shuffle_lst, "shuffle2結果：", shuffled_lst)
+          else:
+            pass
       elif random.random() > 2/4 and random.random() < 3/4: # 25%でマスク(ok)
         masked_token = "[MASK]"
         typ_cor.append(masked_token)
-      else:                                                  # 25%でニュータイプ
-        masked_token = typ_[index]
-        typ_cor.append(masked_token)
+      else:                                                               # 25%でニュータイプ
+        if random.random() < 1/2:                             # そのうち50%で繰り返し
+          select_token = typ_[index]
+          typ_cor.append(select_token)
+          typ_cor.append(select_token)
+        else:                                                            # 50%でランダム挿入
+          select_index = random.choice(typ_idx)
+          masked_token = typ_[index]
+          select_token = typ_[select_index]
+          typ_cor.append(masked_token)
+          typ_cor.append(select_token)
     else:
       typ_cor.append(typ_[index])
   typ_cor = "".join(typ_cor)
