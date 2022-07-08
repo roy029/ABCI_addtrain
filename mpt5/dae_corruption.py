@@ -26,9 +26,7 @@ def suff_3(shuffle_lst):
   return tmp
 
 def suff_2(shuffle_lst):
-  tmp = random.sample(shuffle_lst, 2)#シャッフル
-  if tmp == shuffle_lst:  #高確率でシャッフルに失敗するので
-    tmp = random.sample(shuffle_lst, 2)
+  tmp = [shuffle_lst[0], shuffle_lst[1]]
   return tmp
 
 def DAE(typ_, typ_idx):
