@@ -26,7 +26,7 @@ def suff_3(shuffle_lst):
   return tmp
 
 def suff_2(shuffle_lst):
-  tmp = [shuffle_lst[0], shuffle_lst[1]]
+  tmp = [shuffle_lst[1], shuffle_lst[0]]
   return tmp
 
 def DAE(typ_, typ_idx):
