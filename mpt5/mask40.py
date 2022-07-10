@@ -21,19 +21,25 @@ def get_token(text): #conalaのBleuからtokenizerを拝借
 def mask(typ_, typ_idx):
   typ_mask = []
   for index in typ_idx:
-    if random.random() < 0.4:       # Mask rate
+    if random.random() < 0.40:       # Mask rate
       if random.random() < 0.8:     # 40% of the time, replace with [MASK]
         masked_token = "[MASK]"
-        typ_mask.append(masked_token)
+        if index == 0:
+          typ_mask.append(masked_token)
+        else:
+          if masked_token != typ_mask[-1]: #ひとつ前がMASKではなかったらMASKを追加
+            typ_mask.append(masked_token)
+          else:
+            pass
       elif random.random() > 0.8 and random.random() < 0.9: # 10% of the time, replace with random word
         masked_token = typ_[random.randint(0, len(typ_idx) - 1)]
         typ_mask.append(masked_token)
-      else: # 10% of the time, keep original
+      else:      # 10% of the time, keep original
         typ_mask.append(typ_[index])
     else:
       typ_mask.append(typ_[index])
   typ_mask = "".join(typ_mask)
-  return typ_mask #SRC
+  return typ_mask
 
 def main():
   with open(readfile) as f: #読み込み用ファイル
