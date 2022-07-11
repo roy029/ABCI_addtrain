@@ -5,6 +5,9 @@ import csv
 import pandas as pd
 import re
 
+from tokenize import tokenize, untokenize, NUMBER, STRING, NAME, OP
+from io import BytesIO
+
 def get_token(text): #conalaのBleuからtokenizerを拝借
     text = re.sub(r'([^A-Za-z0-9_])', r' \1 ', text)
     text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
@@ -13,6 +16,13 @@ def get_token(text): #conalaのBleuからtokenizerを拝借
     text = text.replace('\'', '`')
     tokens = [t for t in text.split(' ') if t]
     return tokens
+
+def py_token(text):
+    lst = []
+    tokens = tokenize(BytesIO(line.encode('utf-8')).readline)
+    for token in tokens:
+      lst.append(token.string)
+    return lst[1:-2]
 
 def mask(s:str, ratio):
   token = get_token(s)
