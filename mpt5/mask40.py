@@ -20,7 +20,7 @@ def py_token(text):
     return lst[1:-2]
 
 def mask(s:str, ratio):
-  token = py_token(s)
+  token = get_token(s)
   token_idx = [idx for idx in range(len(token))] 
   buffer = []
   num = 0
@@ -50,11 +50,12 @@ def mask(s:str, ratio):
   return buffer
 
 # 事前学習用テキストデータから読み出す
-readfile = "/content/conala-mined.txt"
-writefile = "/content/random_mask40.txt"
+readfile = "/Users/t_kajiura/Git/ABCI_addtrain/conala-mined.txt"
+# writefile = "/content/random_mask40.txt"
 
 with open(readfile) as f: #読み込み用ファイル
-  with open(writefile, 'w') as f2:
-    for line in f:
-      token_mask = mask(line, 0.4)
-      f2.write(token_mask + '\n')
+  # with open(writefile, 'w') as f2:
+  for line in f:
+    token_mask = mask(line, 0.4)
+    print(token_mask)
+      # f2.write(token_mask + '\n')
