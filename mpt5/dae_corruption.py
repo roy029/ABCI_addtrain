@@ -5,10 +5,8 @@ import json
 import csv
 import pandas as pd
 import re
-
-# 事前学習用テキストデータから読み出す --> SRC, TGTのペアになるtsvファイルを出力
-readfile = "/content/conala-mined.txt"
-writefile = "/content/random_dae0.5.txt"
+from tokenize import tokenize, untokenize, NUMBER, STRING, NAME, OP
+from io import BytesIO
 
 def get_token(text):
     text = re.sub(r'([^A-Za-z0-9_])', r' \1 ', text)
@@ -18,6 +16,13 @@ def get_token(text):
     text = text.replace('\'', '`')
     tokens = [t for t in text.split(' ') if t]
     return tokens
+
+def py_token(text):
+    lst = []
+    tokens = tokenize(BytesIO(line.encode('utf-8')).readline)
+    for token in tokens:
+      lst.append(token.string)
+    return lst[1:-2] #文頭に文字コード、文末に改行が入ってしまうため
 
 def suff_3(shuffle_lst):
   tmp = random.sample(shuffle_lst, 3)#シャッフル
@@ -80,6 +85,10 @@ def DAE(s:str, parameter):
   buffer = "".join(buffer)
   return buffer
 
+
+# 事前学習用テキストデータから読み出す --> SRC, TGTのペアになるtsvファイルを出力
+readfile = "/content/conala-mined.txt"
+writefile = "/content/random_dae0.5.txt"
 
 with open(readfile) as f: #読み込み用ファイル
   with open(writefile, 'w') as f2:
