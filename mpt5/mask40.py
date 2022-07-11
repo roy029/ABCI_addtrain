@@ -1,10 +1,5 @@
 import random
-import numpy as np
-import json
-import csv
-import pandas as pd
 import re
-
 from tokenize import tokenize, untokenize, NUMBER, STRING, NAME, OP
 from io import BytesIO
 
@@ -33,19 +28,19 @@ def mask(s:str, ratio):
   for index in token_idx:
     if random.random() < ratio:       # Mask rate
       if random.random() < 0.8:     # 40% of the time, replace with [MASK]
-        masked_token = f'<extra_{num}>'
+        masked_token = f'<extra_id_{num}>'
         if index == 0:
           buffer.append(masked_token)
           num += 1
         else:
-          if masked_token != buffer[-1]: #ひとつ前がMASKではなかったらMASKを追加
+          if "<extra_id" not in buffer[-1]: #ひとつ前がMASKではなかったらMASKを追加
             buffer.append(masked_token)
             num += 1
           else:
             pass
       elif random.random() > 0.8 and random.random() < 0.9: # 10% of the time, replace with random word
-        masked_token = token[random.randint(0, len(token_idx) - 1)]
-        buffer.append(masked_token)
+        input_token = token[random.randint(0, len(token_idx) - 1)]
+        buffer.append(input_token)
         num += 1
       else:      # 10% of the time, keep original
         buffer.append(token[index])
