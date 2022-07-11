@@ -19,7 +19,7 @@ def get_token(text): #conalaのBleuからtokenizerを拝借
 
 def py_token(text):
     lst = []
-    tokens = tokenize(BytesIO(line.encode('utf-8')).readline)
+    tokens = tokenize(BytesIO(text.encode('utf-8')).readline)
     for token in tokens:
       lst.append(token.string)
     return lst[1:-2]
@@ -33,7 +33,7 @@ def mask(s:str, ratio):
   for index in token_idx:
     if random.random() < ratio:       # Mask rate
       if random.random() < 0.8:     # 40% of the time, replace with [MASK]
-        masked_token = "[MASK]"
+        masked_token = f'<extra_{num}>'
         if index == 0:
           buffer.append(masked_token)
           num += 1
