@@ -25,24 +25,28 @@ def py_token(text):
     return lst[1:-2]
 
 def mask(s:str, ratio):
-  token = get_token(s)
+  token = py_token(s)
   token_idx = [idx for idx in range(len(token))] 
   buffer = []
-  
+  num = 0
+
   for index in token_idx:
     if random.random() < ratio:       # Mask rate
       if random.random() < 0.8:     # 40% of the time, replace with [MASK]
         masked_token = "[MASK]"
         if index == 0:
           buffer.append(masked_token)
+          num += 1
         else:
           if masked_token != buffer[-1]: #ひとつ前がMASKではなかったらMASKを追加
             buffer.append(masked_token)
+            num += 1
           else:
             pass
       elif random.random() > 0.8 and random.random() < 0.9: # 10% of the time, replace with random word
         masked_token = token[random.randint(0, len(token_idx) - 1)]
         buffer.append(masked_token)
+        num += 1
       else:      # 10% of the time, keep original
         buffer.append(token[index])
     else:
