@@ -1,13 +1,7 @@
 import random
-import numpy as np
-import json
-import csv
-import pandas as pd
 import re
-
-# 事前学習用テキストデータから読み出す --> SRC, TGTのペアになるtsvファイルを出力
-readfile = "/content/conala-mini.txt" 
-writefile = "random_mask40.tsv"
+from tokenize import tokenize, untokenize, NUMBER, STRING, NAME, OP
+from io import BytesIO
 
 def get_token(text): #conalaのBleuからtokenizerを拝借
     text = re.sub(r'([^A-Za-z0-9_])', r' \1 ', text)
@@ -18,32 +12,50 @@ def get_token(text): #conalaのBleuからtokenizerを拝借
     tokens = [t for t in text.split(' ') if t]
     return tokens
 
-def mask(typ_, typ_idx):
-  typ_mask = []
-  for index in typ_idx:
-    if random.random() < 0.4:       # Mask rate
-      if random.random() < 0.8:     # 40% of the time, replace with [MASK]
-        masked_token = "[MASK]"
-        typ_mask.append(masked_token)
-      elif random.random() > 0.8 and random.random() < 0.9: # 10% of the time, replace with random word
-        masked_token = typ_[random.randint(0, len(typ_idx) - 1)]
-        typ_mask.append(masked_token)
-      else: # 10% of the time, keep original
-        typ_mask.append(typ_[index])
-    else:
-      typ_mask.append(typ_[index])
-  typ_mask = "".join(typ_mask)
-  return typ_mask #SRC
+def py_token(text):
+    lst = []
+    tokens = tokenize(BytesIO(text.encode('utf-8')).readline)
+    for token in tokens:
+      lst.append(token.string)
+    return lst[1:-2]
 
-def main():
-  with open(readfile) as f: #読み込み用ファイル
-    with open(writefile, 'w') as f2:
-      writer = csv.writer(f2, delimiter='\t')
-      for line in f:
-        token_ = get_token(line)
-        token_idx = [idx for idx in range(len(token_))] 
-        token_mask = mask(token_, token_idx)
-        
-        src_tgt = [token_mask, line]
-        print(src_tgt)
-        writer.writerow(src_tgt)
+def mask(s:str, ratio):
+  token = get_token(s)
+  token_idx = [idx for idx in range(len(token))] 
+  buffer = []
+  num = 0
+
+  for index in token_idx:
+    if random.random() < ratio:       # Mask rate
+      if random.random() < 0.8:     # 40% of the time, replace with [MASK]
+        masked_token = f'<extra_id_{num}>'
+        if index == 0:
+          buffer.append(masked_token)
+          num += 1
+        else:
+          if "<extra_id" not in buffer[-1]: #ひとつ前がMASKではなかったらMASKを追加
+            buffer.append(masked_token)
+            num += 1
+          else:
+            pass
+      elif random.random() > 0.8 and random.random() < 0.9: # 10% of the time, replace with random word
+        input_token = token[random.randint(0, len(token_idx) - 1)]
+        buffer.append(input_token)
+        num += 1
+      else:      # 10% of the time, keep original
+        buffer.append(token[index])
+    else:
+     buffer.append(token[index])
+  buffer = "".join(buffer)
+  return buffer
+
+# 事前学習用テキストデータから読み出す
+readfile = "/Users/t_kajiura/Git/ABCI_addtrain/conala-mined.txt"
+# writefile = "/content/random_mask40.txt"
+
+with open(readfile) as f: #読み込み用ファイル
+  # with open(writefile, 'w') as f2:
+  for line in f:
+    token_mask = mask(line, 0.4)
+    print(token_mask)
+      # f2.write(token_mask + '\n')
