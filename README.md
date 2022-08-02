@@ -14,7 +14,7 @@
   
   [tree-sitterのGithub URL] https://github.com/tree-sitter/py-tree-sitter
   
-  ★不安ポイント：tree-sitterは元のJavaからPythonに変えたけど、それ以外は特に変えていないこと...
+  ★不安ポイント：syntax_match.pyにて、tree-sitterは元のJavaからPythonに変えたけど、それ以外は特に変えていないこと...
   ```
   git clone https://github.com/tree-sitter/tree-sitter-python
   ```
