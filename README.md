@@ -11,7 +11,8 @@ codebleu
   module load gcc/9.3.0 python/3.8 cuda/11.2 cudnn/8.1
   ```
   CodeBLEU/parserの階層で、tree-sitter-pythonをgit cloneする
-  tree-sitterのGithub URL https://github.com/tree-sitter/py-tree-sitter
+  
+  [tree-sitterのGithub URL] https://github.com/tree-sitter/py-tree-sitter
   
   ★不安ポイント：tree-sitterは元のJavaからPythonに変えたけど、それ以外は特に変えていないこと...
   ```
