@@ -29,7 +29,7 @@
   git clone https://github.com/tree-sitter/tree-sitter-python
   ```
   
-  - CodeBLEU/keywords/python.txt
+  - CodeBLEU/keywords/python.txt (書けたらGitにあげて皆で使いまわす)
   
   ★不安ポイント：いったい何を与えるのか謎(現状空のファイルです)
 
