@@ -11,6 +11,11 @@
   ```
   hypp.txt(生成コード)  reff.txt(正解コード)
   ```
+  --> codebleuに書き足せば良いのですが、現状 tsv2txt.pyで2つのテキストファイルを生成できるようにしました
+  ```
+  python3 Testfile/tsv2txt.py result_test.tsv
+  ```
+  
   
 ### 実行前に必要な作業
   
