@@ -1,11 +1,6 @@
-# Copyright (c) Microsoft Corporation. 
-# Licensed under the MIT license.
-# https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans/evaluator/CodeBLEU
-
-# -*- coding:utf-8 -*-
 import argparse
 import os
-from evaluator.CodeBLEU import bleu, weighted_ngram_match, syntax_match, dataflow_match
+import bleu, weighted_ngram_match, syntax_match, dataflow_match
 
 
 def get_codebleu(refs, hyp, lang, params='0.25,0.25,0.25,0.25'):
@@ -35,7 +30,8 @@ def get_codebleu(refs, hyp, lang, params='0.25,0.25,0.25,0.25'):
     ngram_match_score = bleu.corpus_bleu(tokenized_refs, tokenized_hyps)
 
     # calculate weighted ngram match
-    root_dir = os.path.dirname(__file__)
+    # root_dir = os.path.dirname(__file__)
+    root_dir = "/home/acd13734km/Retake/Git/git/ABCI_addtrain/codebleu/evaluator/CodeBLEU" #適宜書き換えて
     keywords = [x.strip() for x in open(root_dir + '/keywords/' + lang + '.txt', 'r', encoding='utf-8').readlines()]
 
     def make_weights(reference_tokens, key_word_list):
