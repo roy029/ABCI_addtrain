@@ -1,5 +1,18 @@
 ## codebleu
   ABCI上で一応それっぽい数字が出るのを確認した段階
+
+### 入出力と実行
+  - 実行スクリプト(calc_code_bleu.pyがあるCodeBLEUの階層で実行する)
+  ```
+  python3 calc_code_bleu.py --refs Testfile/reff.txt --hyp Testfile/hypp.txt --lang python
+  ```
+  
+  - 評価する正解・生成コードはCodeBLEU/Testfile/に、各々テキストファイル形式で与える
+  ```
+  hypp.txt(生成コード)  reff.txt(正解コード)
+  ```
+  
+### 実行前に必要な作業
   
   - モジュールをインポート
   ```
@@ -11,18 +24,11 @@
   
   ★不安ポイント：syntax_match.pyにて、tree-sitterは元のJavaからPythonに変えたけど、それ以外は特に変えていないこと...
   ```
+  pip3 install tree-sitter
+  
   git clone https://github.com/tree-sitter/tree-sitter-python
   ```
   
-  - 実行スクリプト(calc_code_bleu.pyがあるCodeBLEUの階層で実行する)
-  ```
-  python3 calc_code_bleu.py --refs Testfile/reff.txt --hyp Testfile/hypp.txt --lang python
-  ```
-  
-  - 評価する正解・生成コードはCodeBLEU/Testfile/に、各々テキストファイル形式で与える
-  ```
-  hypp.txt(生成コード)  reff.txt(正解コード)
-  ```
   - CodeBLEU/keywords/python.txt
   
   ★不安ポイント：いったい何を与えるのか謎(現状空のファイルです)
