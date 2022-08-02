@@ -1,6 +1,9 @@
 # 使い方
 # python3 tsv2txt.py result_test.tsv(モデルからの生成結果)
 
+# 実行すると、CodeBLEUに必要な、refs.txtとhypp.txtができます。
+# CodeBLEUを実行するときに、--refs, --hypの後に与えるテキストファイル
+
 import argparse
 import json
 import csv
