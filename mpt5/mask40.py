@@ -53,7 +53,7 @@ def mask(s:str, ratio):
 readfile = "/Users/t_kajiura/Git/ABCI_addtrain/conala-mined.txt"
 # writefile = "/content/random_mask40.txt"
 
-with open(readfile) as f: #読み込み用ファイル
+with open(readfile) as f: #テキストデータ用
   # with open(writefile, 'w') as f2:
   for line in f:
     token_mask = mask(line, 0.4)
