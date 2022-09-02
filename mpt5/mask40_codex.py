@@ -3,7 +3,7 @@ import re
 from tokenize import tokenize, untokenize, NUMBER, STRING, NAME, OP
 from io import BytesIO
 
-def get_token(text): #conalaのBleuからtokenizerを拝借
+def get_token(text): #conala_Bleu from tokenizer
     text = re.sub(r'([^A-Za-z0-9_])', r' \1 ', text)
     text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
     text = text.replace('\n', ' <nl> ')
@@ -35,7 +35,7 @@ def mask(s:str, ratio):
           buffer.append(masked_token)
           num += 1
         else:
-          if "<extra_id" not in buffer[-1] and num < 100: #ひとつ前がMASKではなかったらMASKを追加
+          if "<extra_id" not in buffer[-1] and num < 100: #Add MASK if the previous one was not MASK.
             buffer.append(masked_token)
             num += 1
           else:
@@ -51,11 +51,11 @@ def mask(s:str, ratio):
   buffer = "".join(buffer)
   return buffer
 
-# 事前学習用テキストデータから読み出す
+# Read from pre-study text data
 readfile = "/Users/t_kajiura/Git/ABCI_addtrain/conala-mined.txt"
 # writefile = "/content/random_mask40.txt"
 
-with open(readfile) as f: #テキストデータ用
+with open(readfile) as f: #For text data
   # with open(writefile, 'w') as f2:
   for line in f:
     token_mask = mask(line, 0.4)
