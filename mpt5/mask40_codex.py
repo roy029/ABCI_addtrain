@@ -1,28 +1,30 @@
 import random
 import re
+import json
 from tokenize import tokenize, untokenize, NUMBER, STRING, NAME, OP
 from io import BytesIO
+import csv
+import glob
 
 def get_token(text): #conala_Bleu from tokenizer
     text = re.sub(r'([^A-Za-z0-9_])', r' \1 ', text)
     text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
     text = text.replace('\n', ' <nl> ')
-    text = text.replace('\t', ' <tab> ')
     text = text.replace('    ', ' <tab> ')
+    text = text.replace('\t', ' <tab> ')
     text = text.replace('"', '`')
     text = text.replace('\'', '`')
     tokens = [t for t in text.split(' ') if t]
     return tokens
 
 def py_token(text):
-    lst = []
-    tokens = tokenize(BytesIO(text.encode('utf-8')).readline)
-    for token in tokens:
-      lst.append(token.string)
-    return lst[1:-2]
+  lst = []
+  tokens = tokenize(BytesIO(text.encode('utf-8')).readline)
+  for token in tokens:
+    lst.append(token.string)
+  return lst[1:-2]
 
-def mask(s:str, ratio):
-  token = get_token(s)
+def mask(token, ratio):
   token_idx = [idx for idx in range(len(token))] 
   buffer = []
   num = 0
@@ -51,13 +53,35 @@ def mask(s:str, ratio):
   buffer = "".join(buffer)
   return buffer
 
-# Read from pre-study text data
-readfile = "/Users/t_kajiura/Git/ABCI_addtrain/conala-mined.txt"
-# writefile = "/content/random_mask40.txt"
+# 書き出しファイル
+writefile = "/home/acd13734km/pydata/python/codex_mask40.tsv"
 
-with open(readfile) as f: #For text data
-  # with open(writefile, 'w') as f2:
-  for line in f:
-    token_mask = mask(line, 0.4)
-    print(token_mask)
-      # f2.write(token_mask + '\n')
+json_files = glob.glob("/home/acd13734km/pydata/python/final/jsonl/*/*.jsonl")
+for file in json_files:
+  with open(file) as f: #読み込み用ファイル
+    with open(writefile, 'w') as f2:
+      writer = csv.writer(f2, delimiter="\t")
+      for line in f.readlines():
+        data = json.loads(line)
+        token = get_token(data["code"])
+        token_mask = mask(token, 0.40)
+        token_code = "".join(token)
+        writer.writerow([token_mask, token_code])
+
+# with open(readfile) as f: #読み込み用ファイル
+#   with open(writefile, 'w') as f2:
+#     writer = csv.writer(f2, delimiter="\t")
+#     for line in f.readlines():
+#       data = json.loads(line)
+#       token = get_token(data["code"])
+#       token_mask = mask(token, 0.15)
+#       token_code = "".join(token)
+#       writer.writerow([token_mask, token_code])
+
+
+# with open(readfile) as f: #For text data
+#   # with open(writefile, 'w') as f2:
+#   for line in f:
+#     token_mask = mask(line, 0.4)
+#     print(token_mask)
+#       # f2.write(token_mask + '\n')
