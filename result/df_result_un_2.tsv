@@ -1,0 +1,510 @@
+TypeError: A object is not subscriptable<tab>'builtin_function_or_method'<tab>print(max[x * y])	max = buitlins.max_depthのスペルミスだよ。	max(x * y) に直そう。
+"NameError: name A is not defined<tab>'plt'<tab>plt.ylabel(""GT"", fontsize=13)"	import matplotlib.pyplot as A を実行しよう。	import matplotlib.pyplot as A を実行しよう。
+TypeError: A() must have at least two arguments.<tab>map<tab>S,T = map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+ImportError: cannot import name A from B C<tab>'MLPRegressor' 'sklearn.linear_model' (/...<tab>from sklearn.linear_model import MLPRegressor	@CheckImportPath(A)	@CheckImportPath(A)
+NameError: name A is not defined<tab>'X'<tab>y_pred = model.predict(X)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"KeyError: ""None of A are in the B""<tab>'[Index(['precioitation_num'], dtype='obj...<tab>X = df[['precioitation_num']]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+TypeError: A object is not subscriptable<tab>'int'<tab>return int(x[0])	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 ''<tab>N=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'df'<tab>X = df[df.columns[1:]]  # target 以外	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'年齢'<tab>plt.scatter(df['年齢'],df['G3'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+AttributeError: A object has no attribute B<tab>'list' 'join'<tab>print(ans.join(''))	A は、文字列名.A のように操作する文字列が必要だよ。	print(''.B(ans)) に直そう。
+TypeError: A object is not iterable<tab>'builtin_function_or_method'<tab>A,B,C=map(int, input().split)	A = builtins.A で初期化してみよう。	map(int, input().split()) に直そう。
+NameError: name A is not defined<tab>'Trainer'<tab>trainer = Trainer(max_epochs=10)	変数Aを使う前にA=... のように値を代入しよう。	from transformers import A を実行しよう。
+AttributeError: module A has no attribute B<tab>'pandas' 'DataFlame'<tab>df = pd.DataFlame()	pd.B().Bしよう。	DataFrameのスペルミスだよ。
+KeyError: A<tab>'体重'<tab>df4['BMI'] = df['体重']/(df['身長']/100)**2	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+AttributeError: A object has no attribute B<tab>'NoneType' 'rename'<tab>df3 = df3.rename(columns={'身長_x': ' 身長'}, inplace=True)	データフレームがNoneだよ。inplace=True による結果を代入していない?	データフレームがNoneだよ。inplace=True による結果を代入していない?
+"KeyError: ""A not in index""<tab>['川辺']<tab>X = df[['緑地', '川辺']]  # 説明変数"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+TypeError: A not supported between instances of B and C<tab>'>' 'str' 'int'<tab>if a>c:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+"KeyError: ""A not in index""<tab>['部屋数宇']<tab>X = df[['部屋数宇','築年']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'df_pr_name'<tab>X_train_pr_name, X_test_pr_name = train_test_split(df_pr_name,test_size = 0.3)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A not supported between instances of B and C<tab>'>=' 'str' 'int'<tab>if d>=5:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+TypeError: object of type A has no B()<tab>'int' len<tab>a = len(N)	B(str(N)) に直そう。	B(str(N)) に直そう。
+TypeError: A() must have at least two arguments.<tab>map<tab>S,T = map(input())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+TypeError: A object is not subscriptable<tab>'int'<tab>if A<=(int(a1[0])+int(a[1])+int(a[2])+int(a[3]))<=B:	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+AttributeError: type object A has no attribute B<tab>'list' 'input'<tab>x=list.input()	map(A, input().A()) に直そう。	A(B()) に直そう。
+AttributeError: A object has no attribute B<tab>'function' 'head'<tab>df4.head()	df4が関数になってしまっているよ。	df4が関数になってしまっているよ。
+NameError: name A is not defined<tab>'roud'<tab>print(roud(x))	sher のスペルミスだよ。	roundのスペルミスだよ。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = PassiveAggressiveRegressor(max_depth=depth)  # None 制限なし	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+"KeyError: ""A not found in axis""<tab>['string']<tab>df.drop('string', axis=1, inplace=True)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+"KeyError: ""A not found in axis""<tab>['precipation']<tab>df.drop('precipation', axis=1, inplace=True)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+KeyError: A<tab>'\u3000身長'<tab>df3.sort_values(by='　身長')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'X'<tab>X, y, test_size=0.3, random_state=0)	変数Aを使う前にA=... のように値を代入しよう。	コードが途中から書かれているよ。
+NameError: name A is not defined<tab>'column'<tab>print(column)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'datetime'<tab>df_name['datetime'][0:206]= df['datetime'][0:206]	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'データフレームをcsvファイルに保存'<tab>データフレームをcsvファイルに保存	データフレームにAという列はないよ。	文字列はAのように' 'で囲もう。
+NameError: name A is not defined<tab>'x'<tab>x==0	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: too many values to unpack (expected A)<tab>2<tab>S,T=[list(map(str, input().split())) for N in range(N)]	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'RandomForestRegressor'<tab>model =RandomForestRegressor(),	from sklearn.ensemble import A を実行しよう。	from sklearn.ensemble import A を実行しよう。
+NameError: name A is not defined<tab>'corr'<tab>print(corr(df['week_num'], df['y']))	print(df['week_count'])) に直そう。	print(df['week_num'].A(df['y'])) に直そう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'maxdepth'<tab>model = DecisionTreeRegressor(maxdepth=depth)	max_depthのスペルミスだよ。	max_depthのスペルミスだよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '123 234'<tab>x=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A() must have at least two arguments.<tab>map<tab>s,t=map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+KeyError: A<tab>'1'<tab>sns.kdeplot(df.groupby('健康状態').get_group('1')['G3'], shade = True, label = '1')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'aa'<tab>ss[1]=aa[1]+s[1]	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'SD'<tab>S[0],S[2] = S[2],SD[0]	変数Aを使う前にA=... のように値を代入しよう。	A をSに直そう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = LinearRegression(max_depth=5)	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+"KeyError: ""A not found in axis""<tab>['生年月日']<tab>df.drop('生年月日', axis=1, inplace=True)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+TypeError: object of type A has no B()<tab>'int' len<tab>k=len(K)	B(str(N)) に直そう。	B(str(K)) に直そう。
+NameError: name A is not defined<tab>'ans'<tab>ans<=A/B	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'n'<tab>a=S[-n:]	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'m'<tab>while i <m:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'math'<tab>print(math.ceil(B-1)/(A-1))	import A を実行しよう。	import A を実行しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '123,345'<tab>A,B=map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>K,S=map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'mount'<tab>mount[a] = int(b)	mount のスペルミスだよ。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: object of type A has no B()<tab>'int' len<tab>print((4-int(len(N)))*0+N)	B(str(N)) に直そう。	B(str(N)) に直そう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'fg'<tab>z=int(input())	問題番号と入力データはあってる?	str(input()) に直そう。
+TypeError: A object is not subscriptable<tab>'int'<tab>y=N[-1]	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+TypeError: A object is not callable<tab>'DataFrame'<tab>X = df(['kcal','payday'])	df[['X', 'Y']] ←カンマ注意。	df[['X', 'Y']] ←2重四角括弧だよ。
+NameError: name A is not defined<tab>'train_test_split'<tab>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=0)	変数Aを使う前にA=... のように値を代入しよう。	from sklearn.model_selection import A を実行しよう。
+ValueError: not enough values to unpack (expected A, got B)<tab>3 1<tab>N=a,b,c=map(str,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+"TypeError: A() got an unexpected keyword argument B<tab>pivot_table 'colums'<tab>pd.pivot_table(df, index = ""血液型"", colums = ""身長"")"	columnsのスペルミスだよ。	columnsのスペルミスだよ。
+FileNotFoundError: A No such file or directory: B<tab>[Errno 2] 'cancer.csv'<tab>df =pd.read_csv('cancer.csv')	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+"NameError: name A is not defined<tab>'x_test'<tab>print(""MSE: "", mean_squared_error(x_test,y_pred))"	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'sin'<tab>sin(1)	変数Aを使う前にA=... のように値を代入しよう。	math.A に直そう。
+NameError: name A is not defined<tab>'fc1'<tab>x = fc1(x)	変数Aを使う前にA=... のように値を代入しよう。	関数Aを定義しよう。
+KeyError: (A, B)<tab>'資産税' '教員比'<tab>X = df['資産税','教員比']	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+AttributeError: module A has no attribute B<tab>'pandas' 'read'<tab>dfB = pd.read('プロ野球選手身長体重.csv')	pd.B_csv のスペルミスだよ。	pd.B_csv に直そう。
+KeyError: A<tab>'アルコール'<tab>sns.pairplot(df, hue='アルコール')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'df'<tab>df['kcal'].describe() #平均値探し	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '3.456'<tab>f=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'figsize'<tab>plt.figure(figsize(7,7))	変数Aを使う前にA=... のように値を代入しよう。	plt.figure(A=(7,7)) に直そう。
+TypeError: A() must have at least two arguments.<tab>map<tab>N=a,b,c=map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+FileNotFoundError: A No such file or directory: B<tab>[Errno 2] 'ja.csv'<tab>df = pd.read_csv('ja.csv')	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+NameError: name A is not defined<tab>'cosine_similarity'<tab>print(cosine_similarity(X, Y))	変数Aを使う前にA=... のように値を代入しよう。	from sklearn.metrics.pairwise import A を実行しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '2,4'<tab>A,B=map(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'word_tag_'<tab>if '句点' in word_tag_:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"KeyError: ""A not in index""<tab>['チーム']<tab>df1[['名前','チーム','身長','体重']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'nikoandsolstice'<tab>x=int(S)	str(S) に直そう。	str(input()) に直そう。
+NameError: name A is not defined<tab>'x'<tab>x=int(x)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'0'<tab>sns.kdeplot(df.groupby('学習時間').get_group('0')['G3'], shade = True, label = '1')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"NameError: name A is not defined<tab>'num1'<tab>round(""n"" ,num1)"	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'教育内容'<tab>plt.hist(df['教育内容'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: could not convert string to float: A<tab>'特になし'<tab>model.fit(X, y)	説明変数から非数値データを取り除こう。	説明変数から非数値データを取り除こう。
+"KeyError: A<tab>'文字数'<tab>df[""文字数""] == df[""コメント""].str.len()"	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+AttributeError: A object has no attribute B<tab>'NoneType' 'rename'<tab>df3.rename(columns={'身長_x': '身長'}, inplace=True)	データフレームがNoneだよ。inplace=True による結果を代入していない?	データフレームがNoneだよ。inplace=True による結果を代入していない?
+"NameError: name A is not defined<tab>'ans1'<tab>if ans1 == ""Yes"" and ans2 == ""Yes"" and ans3 == ""Yes"" :"	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'男性'<tab>df['性別'] = df['男性'] * 5	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+KeyError: A<tab>'身長'<tab>df3.sort_values(by='身長', ascending=False)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'ansgd'<tab>N=ansgd	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: Input contains NaN, infinity or a value too large for dtype(A).<tab>'float64'<tab>model.fit(X, y)	説明変数からNaNや無限大を取り除こう。	説明変数からNaNや無限大を取り除こう。
+TypeError: A object is not subscriptable<tab>'int'<tab>A[1]	整数は先に文字列に変換しよう。	A(str(A)[1]) に直そう。
+AttributeError: A object has no attribute B<tab>LinearRegression' 'feature_importances_...<tab>model.feature_importances_	線形回帰は決定木じゃないよ!	線形回帰は決定木じゃないよ!
+"KeyError: ""None of A are in the B""<tab>[Float64Index([0.0, 0.0, 0.0, 0.0, 0.0, ...<tab>df=df+df[Weather]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+KeyError: (A, B)<tab>'kal' 'soldout'<tab>X = df['kal','soldout']	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+"KeyError: ""A not in index""<tab>['curry']<tab>X = df[['soldout','kcal','payday','temperature', 'weather_num','week_num', 'precipitation_num','event_num','remarks_num','name_num','otanoshimi','curry']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+"FileNotFoundError: A No such file or directory: B<tab>[Errno 2] 'town_survey.csv'<tab>df = pd.read_csv(""town_survey.csv"")"	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+NameError: name A is not defined<tab>'column1'<tab>X = df[[column1], [column]]	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>0<tab>keys_list(df_key['keys'][0])	.iloc[A] じゃない?	.iloc[A] じゃない?
+TypeError: A() must have at least two arguments.<tab>map<tab>K,S=map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+AttributeError: A object has no attribute B<tab>DecisionTreeRegressor' 'feature_inporta...<tab>model.feature_inportances_	feature_importances_のスペルミスだよ。	feature_importances_のスペルミスだよ。
+TypeError: A not supported between instances of B and C<tab>'<' 'list' 'int'<tab>while ma<w:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+KeyError: A<tab>0<tab>df_uid_all[0]	.iloc[A] じゃない?	.iloc[A] じゃない?
+ValueError: invalid literal for A() with base B: C<tab>int 10 '157.89'<tab>N=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'TS'<tab>print(TS)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not callable<tab>'int'<tab>print(max(l))	max = buitlins.max で初期化してみよう。	max = buitlins.max で初期化してみよう。
+NameError: name A is not defined<tab>'X_train_name'<tab>print('name の訓練データ数：',len(X_train_name))	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'maxdepth'<tab>model = DecisionTreeRegressor(maxdepth=3)	max_depthのスペルミスだよ。	max_depthのスペルミスだよ。
+AttributeError: A object has no attribute B<tab>'Net' 'batch_sizes'<tab>model.batch_sizes	B のプロパティはないよ。	B のプロパティはないよ。
+TypeError: A not supported between instances of B and C<tab>'<=' 'str' 'int'<tab>if X[-3]<=4:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '123 234'<tab>t = int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A object is not subscriptable<tab>'int'<tab>print(l[i][k])	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+TypeError: A object is not callable<tab>'int'<tab>print(max(a, b, c))	max = buitlins.max で初期化してみよう。	max = buitlins.max で初期化してみよう。
+AttributeError: A object has no attribute B<tab>'DataFrame' 'column'<tab>for column in df.column[:-1]:	columnsのスペルミスだよ。	columnsのスペルミスだよ。
+TypeError: A object is not iterable<tab>'NoneType'<tab>min(B)	min = buitlins.min で初期化してみよう。	min = buitlins.min で初期化してみよう。
+"TypeError: A() got an unexpected keyword argument B<tab>pivot_table 'colums'<tab>pd.pivot_table(df, index=""血液型"",colums=""身長"")"	columnsのスペルミスだよ。	columnsのスペルミスだよ。
+KeyError: A<tab>'友人と遊ぶ頻度'<tab>sns.boxplot(x=df['友人と遊ぶ頻度'], y=df['G3'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'er'<tab>if S.find(er):	文字列はAのように' 'で囲もう。	文字列はAのように' 'で囲もう。
+TypeError: A() got multiple values for argument B<tab>merge 'how'<tab>dfD = pd.merge(dfA, dfB, dfC, on='身長', how='inner')	一度に結合できるデータフレームは2つまでだよ。	一度に結合できるデータフレームは2つまでだよ。
+TypeError: A() got multiple values for argument B<tab>merge 'how'<tab>dfD = pd.merge(dfA, dfB, dfC, on='名前', how='outer')	一度に結合できるデータフレームは2つまでだよ。	一度に結合できるデータフレームは2つまでだよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'B'<tab>N=int(input())	問題番号と入力データはあってる?	map(str, input().split()) に直そう。
+NameError: name A is not defined<tab>'Trainer'<tab>trainer = Trainer()	変数Aを使う前にA=... のように値を代入しよう。	from transformers import A を実行しよう。
+TypeError: A() missing B required positional argument: C<tab>__init__ 1 'steps'<tab>model = Pipeline()	Cが必要だよ。	Cが必要だよ。
+KeyError: (A, B)<tab>'部屋数' '低所得率'<tab>X = df['部屋数', '低所得率']  # ひとつ選ぶ	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'figure'<tab>plt.figure(figure=(6,6))	fig変数から非数値データを取り除こう。	figsizeのスペルミスだよ。
+TypeError: A() must have at least two arguments.<tab>map<tab>a,b,c,d=map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+AttributeError: A object has no attribute B<tab>'str' 'endwith'<tab>if S.endwith('er'):	endswith のスペルミスだよ。	endswith のスペルミスだよ。
+KeyError: A<tab>'1'<tab>sns.kdeplot(df.groupby('学習時間').get_group('1')['G3'], shade = True, label = 1)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"KeyError: ""A not in index""<tab>['教員']<tab>X = df[['緑地', '教員']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'strip'<tab>print(T, S, strip())	変数Aを使う前にA=... のように値を代入しよう。	S.A() ←カンマ注意。
+AttributeError: A object has no attribute B<tab>'Series' 'info'<tab>df['curry'].info()	データフレームがA型になってしまっているよ。	B()はデータフレームのメソッドだよ。
+NameError: name A is not defined<tab>'a'<tab>print(0,a)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'1'<tab>sns.kdeplot(df.groupby('学習時間').get_group('1')['G3'], shade = True, label = '1')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'nikoandsolstice'<tab>b=int(input())	問題番号と入力データはあってる?	str(input()) に直そう。
+TypeError: A not supported between instances of B and C<tab>'<' 'list' 'int'<tab>a=sorted(a)	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+KeyError: A<tab>'身長'<tab>df3.sort_values(by='身長')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'string'<tab>S, T = map(string, input().split())	str のスペルミスだよ。	str のスペルミスだよ。
+"FileNotFoundError: A No such file or directory: B<tab>'[Errno 2] 'Users:/shion/Desktop/OJT/numa...<tab>X_train_numa_p = pd.read_csv(""Users:/shion/Desktop/OJT/numa-chan/train_Numa_print.csv"")"	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+"NameError: name A is not defined<tab>'replace'<tab>print(replace(""9"",""1""))"	"print(A,2"")) に直そう。"	Aは、文字列名.A() のように操作する文字列が必要だよ。
+NameError: name A is not defined<tab>'weather'<tab>print(df[weather.isnull()])	df のスペルミスだよ。	文字列はAのように' 'で囲もう。
+NameError: name A is not defined<tab>'A'<tab>A.B=map(int,input().split())	A = int, input().split()) に直そう。	A,B=map(int,input().split()) ←カンマ注意。
+NameError: name A is not defined<tab>'Series'<tab>for key in Series:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not iterable<tab>'numpy.float64'<tab>max(r2)	max = buitlins.max で初期化してみよう。	max = buitlins.max で初期化してみよう。
+ValueError: too many values to unpack (expected A)<tab>2<tab>N, P = map(str, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+ValueError: invalid literal for A() with base B: C<tab>int 10 '3 10 20 39'<tab>N=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'ba'<tab>mi=[x for x in b if a[i]-ab<=ba[i]+ab]	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not iterable<tab>'builtin_function_or_method'<tab>N, A ,X, Y=map(int,input().split)	map(int, input().split()) に直そう。	map(int, input().split()) に直そう。
+NameError: name A is not defined<tab>'df'<tab>plt.scatter(df['部屋数'], df['住宅価格'])	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'1'<tab>sns.kdeplot(df.groupby('アルコール').get_group('1')['G3'], shade = True, label = '1')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+FileNotFoundError: A No such file or directory: B<tab>[Errno 2] 'Jリーグ選手身長体重.csv'<tab>df = pd.read_csv('Jリーグ選手身長体重.csv')	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+NameError: name A is not defined<tab>'RandomorestRegressor'<tab>model = RandomorestRegressor()	from sklearn.ensemble import A を実行しよう。	RandomForestRegressor のスペルミスだよ。
+"FileNotFoundError: A No such file or directory: B<tab>'[Errno 2] 'shion:/Desktop/OJT/numa-chan/...<tab>X_train_numa_p = pd.read_csv(""shion:/Desktop/OJT/numa-chan/train_Numa_print.csv"")"	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+FileNotFoundError: A No such file or directory: B<tab>'[Errno 2] '/drive/my-drive/nuna-chan/tra...<tab>X_train_numa_p = pd.read_csv('/drive/my-drive/nuna-chan/train_Numa_print.csv')	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+"KeyError: ""None of A are in the B""<tab>[Index(['川辺'], dtype='object')] [columns...<tab>X = df[['川辺']]  # ひとつ選ぶ"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+NameError: name A is not defined<tab>'cin'<tab>cin >> A1 >> A2 >> A3	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'corr'<tab>rho = corr(df[column], df['犯罪率'])	print(df[column].A(df['犯罪率'])) に直そう。	print(df[column].A(df['犯罪率'])) に直そう。
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>h,w=map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+"KeyError: ""A not in index""<tab>['week_num', 'weather_num', 'event_num',...<tab>X = df[['week_num','temperature','weather_num','kcal','soldout','event_num', 'remarks_num', 'precipitation_num']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+TypeError: A object is not subscriptable<tab>'type'<tab>str[s,t,u,v]	本当にlist変数?	本当にstr変数?
+KeyError: A<tab>0<tab>df_key['keys'][0]	.iloc['A] じゃない?	.iloc[A] じゃない?
+TypeError: A object is not subscriptable<tab>'int'<tab>if n[i]>=k:	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>A,B = map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'figsize'<tab>plt.figure(figsize[7,7])	変数Aを使う前にA=... のように値を代入しよう。	plt.figure(A=(7,7)) に直そう。
+ImportError: cannot import name A from B C<tab>'RandomForestRegressor' 'sklearn.tree' (...<tab>from sklearn.tree import RandomForestRegressor	@CheckImportPath(A)	@CheckImportPath(A)
+NameError: name A is not defined<tab>'math'<tab>money = math.floor(money * 1.01)	import A を実行しよう。	import A を実行しよう。
+KeyError: A<tab>'販売数'<tab>plt.scatter(df['temperature'], df['販売数'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"NameError: name A is not defined<tab>'train'<tab>train.index = pd.to_datetime(train[""datetime""])"	変数Aを使う前にA=... のように値を代入しよう。	変数名に. は使えないよ。
+NameError: name A is not defined<tab>'collections'<tab>c = collections.Counter(A)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A() must have at least two arguments.<tab>map<tab>n,k=map(input(int()))	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+ValueError: not enough values to unpack (expected A, got B)<tab>3 1<tab>x,y,z=map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'maxdepth'<tab>model = DecisionTreeRegressor(maxdepth=5)	max_depthのスペルミスだよ。	max_depthのスペルミスだよ。
+NameError: name A is not defined<tab>'RandomForestRegressor'<tab>model =RandomForestRegressor()	from sklearn.linear_model import A を実行しよう。	from sklearn.ensemble import A を実行しよう。
+NameError: name A is not defined<tab>'n'<tab>for j in range(1,n):	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"FileNotFoundError: A No such file or directory: B<tab>'[Errno 2] '/Users/shion/Desktop/OJT/numa...<tab>X_train_numa_p = pd.read_csv(""/Users/shion/Desktop/OJT/numa-chan/train_Numa_print.csv"")"	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+ValueError: invalid literal for A() with base B: C<tab>int 10 '4,3'<tab>a,b = map(int, input().split())	map(str, input().split()) に直そう。	問題番号と入力データはあってる?
+TypeError: A object is not subscriptable<tab>'builtin_function_or_method'<tab>print(max[e,f,g,h])	max_depthのスペルミスだよ。	max(e,f,g,h) に直そう。
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>S, K= map(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'DecisionTreeRegressor'<tab>model = DecisionTreeRegressor()	DecisionTreeRegressor のスペルミスだよ。	from sklearn.tree import A を実行しよう。
+NameError: name A is not defined<tab>'df'<tab>X = df[df.columns[:-1]]	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'2'<tab>sns.kdeplot(df.groupby('アルコール').get_group('2')['G3'], shade = True, label = '2')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '-13 3'<tab>A,B = int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A not supported between instances of B and C<tab>'<=' 'int' 'str'<tab>0<= N <= 9999	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+NameError: name A is not defined<tab>'train'<tab>train['week'].value_counts()	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'n'<tab>while i<n:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '4,2'<tab>A,B=map(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+"NameError: name A is not defined<tab>'df2'<tab>df2[(df['身長'] >= 170) & (df['血液型'] == ""A"")]"	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = LinearRegression(max_depth=3)	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+KeyError: A<tab>'名前'<tab>df3 = pd.merge(df, df2, on='名前', how='outer')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+KeyError: A<tab>'[5] not found in axis'<tab>df3=df3.drop(5, axis=0, inplace=True)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+KeyError: (A, B, C, D)<tab>kcal' 'weather_num' 'week_num' 'tempera...<tab>columns = df['kcal', 'weather_num', 'week_num', 'temperature']	[[A, B, C, D] ←2重括弧だよ。	[[A, B, C, D] ←2重括弧だよ。
+"KeyError: ""A not in index""<tab>['交通「']<tab>X = df[['部屋数','低所得率','交通「']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+KeyError: (A, B)<tab>'通勤' '教員'<tab>X = df['通勤', '教員']  # 説明変数	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+"KeyError: ""A not in index""<tab>['precipitstion_num']<tab>X = df[['temperature','soldout','precipitstion_num']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+"AttributeError: A object has no attribute B<tab>'list' 'replace'<tab>A1=(A).replace(X,"" "")"	整数は先に文字列に変換してからBしよう。	Bできるのは文字列だよ。
+NameError: name A is not defined<tab>'nlp'<tab>doc = nlp(text)	nl.py as A を実行しよう。	関数Aを定義しよう。
+KeyError: A<tab>'犯罪'<tab>X = df['犯罪']  # ひとつ選ぶ	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '3 4 5'<tab>A,B,C=map(int(input()))	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+"KeyError: ""A not found in axis""<tab>['']<tab>df.drop('', axis=1, inplace=True)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+AttributeError: A object has no attribute B<tab>'NoneType' 'drop'<tab>df3.drop('身長_y', axis=1, inplace=True)	データフレームがNoneだよ。inplace=True による結果を代入していない?	データフレームがNoneだよ。inplace=True による結果を代入していない?
+KeyError: A<tab>'menu'<tab>df_menu = pd.get_dummies(df['menu'], dummy_na=False, columns=['menu'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+TypeError: object of type A has no B()<tab>'int' len<tab>Al = len(A)	B(str(A)) に直そう。	B(str(A)) に直そう。
+ValueError: too many values to unpack (expected A)<tab>2<tab>a, b = map(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+KeyError: A<tab>'target'<tab>y = df['target']	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"FileNotFoundError: A No such file or directory: B<tab>'[Errno 2] '/Users:/shion/Desktop/OJT/num...<tab>X_train_numa_p = pd.read_csv(""/Users:/shion/Desktop/OJT/numa-chan/train_Numa_print.csv"")"	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+AttributeError: A object has no attribute B<tab>'function' 'split'<tab>A,B,C=map(int,input.split())	map(int,input().B()) に直そう。	map(int,input().B()) に直そう。
+NameError: name A is not defined<tab>'I'<tab>I==i	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'A'<tab>df['A']	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'PLSRegression'<tab>model=PLSRegression(n_components=10)	from sklearn.linear_model import A を実行しよう。	from sklearn.cross_decomposition import A を実行しよう。
+NameError: name A is not defined<tab>'nn'<tab>fc1 = nn.Linear(12, 5)	変数Aを使う前にA=... のように値を代入しよう。	import torch.A as A を実行しよう。
+NameError: name A is not defined<tab>'cosine_similarity'<tab>similarity = cosine_similarity(vec[index:index+1], vec)[0]	文字列はAのように' 'で囲もう。	from sklearn.metrics.pairwise import A を実行しよう。
+NameError: name A is not defined<tab>'pd'<tab>df = pd.read_csv('boston.csv')	import pandas as A を実行しよう。	import pandas as A を実行しよう。
+AttributeError: A object has no attribute B<tab>DecisionTreeRegressor' 'feature_importa...<tab>model.feature_importance	feature_importances_のスペルミスだよ。	feature_importances_のスペルミスだよ。
+NameError: name A is not defined<tab>'replace'<tab>n=replace(1,9)	文字列はAのように' 'で囲もう。	Aは、文字列名.A() のように操作する文字列が必要だよ。
+TypeError: A object is not subscriptable<tab>'int'<tab>print(A[1[0]])	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+NameError: name A is not defined<tab>'de'<tab>de['name']	df のスペルミスだよ。	df のスペルミスだよ。
+"KeyError: ""A not in index""<tab>['curry']<tab>X = df_train[['month', 'day', 'week', 'soldout', 'kcal', 'payday', 'weather', 'remarks','temperature',""curry""]]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+"KeyError: A<tab>'身長'<tab>df3.sort_values(by=""身長"", ascending = False)"	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = MLPRegressor(max_depth=depth)  # None 制限なし	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+AttributeError: A object has no attribute B<tab>'builtin_function_or_method' 'head'<tab>print.head()	print(B_list.head()	print(head) に直そう。
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>A,B = map(str,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A object is not iterable<tab>'int'<tab>for letter in len(S):	for s in range(S): に直そう。	for letter in S: に直そう。
+KeyError: A<tab>'name'<tab>for name in df['name']:	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'a'<tab>a+b	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'n'<tab>ans += chr(ord('A')+(ord(letter)-ord('A')+n)%26)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '1 6'<tab>a=list(int(input()))	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+ModuleNotFoundError: No module named A<tab>'janome'<tab>from janome.tokenizer import Tokenizer	.pip install A を実行しよう。	!pip install A を実行しよう。
+NameError: name A is not defined<tab>'colomn'<tab>X = df[[colomn]]	column のスペルミスだよ。	column のスペルミスだよ。
+KeyError: A<tab>'year'<tab>df['yaer'] = df['year'].astype(np.int)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: too many values to unpack (expected A)<tab>2<tab>n,k=input(int())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A() must have at least two arguments.<tab>map<tab>a,b =map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+TypeError: A not supported between instances of B and C<tab>'>=' 'str' 'int'<tab>if X[a+1]>=5:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+NameError: name A is not defined<tab>'ss'<tab>print(''.join(ss))	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'B'<tab>B=str(B)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A not supported between instances of B and C<tab>'>=' 'str' 'int'<tab>if X[-3]>=4:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+NameError: name A is not defined<tab>'dfb'<tab>for colum in dfb.columns[:-1]:	df のスペルミスだよ。	df のスペルミスだよ。
+NameError: name A is not defined<tab>'S'<tab>S[j].append(num)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not callable<tab>'int'<tab>print(max(s,t,u,v))	max = buitlins.max で初期化してみよう。	max = buitlins.max で初期化してみよう。
+TypeError: A object is not iterable<tab>'int'<tab>x=list(x)	A = buitlins.Aで初期化してみよう。	A = buitlins.Aで初期化してみよう。
+TypeError: A object is not subscriptable<tab>'int'<tab>x+=A[i]	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+AttributeError: type object A has no attribute B<tab>'str' 'input'<tab>K,S=map(str.input().split())	map(str, input().split()) に直そう。	map(A, B().split()) ←カンマ注意。
+AttributeError: A object has no attribute B<tab>'LinearRegression' 'intercepy_'<tab>print('a=', model.coef_, 'b=', model.intercepy_)	coef_scoreのスペルミスだよ。	intercept_ のスペルミスだよ。
+NameError: name A is not defined<tab>'priny'<tab>priny(b)	print のスペルミスだよ。	print のスペルミスだよ。
+NameError: name A is not defined<tab>'_pred'<tab>print(_pred)	予測データがまだAに代入されていないよ。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A() argument B must be str, not int<tab>replace 1<tab>print(n.replace(1,'x').replace(9,1).replace('x',9))	Aできるのは文字列だよ。	Aできるのは文字列だよ。
+"KeyError: ""A not in index""<tab>['kacl']<tab>X = df[['week','kacl']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'t'<tab>print(f(f(f(t)+t)+f(f(t))))	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+IndexError: only integers, slices (A), ellipsis (B), numpy.newaxis (C) and integer or boolean arrays are valid indices<tab>`:` `...` `None`<tab>X = df[df.columns['y','kcal','tempreature']]	.columns は要らないよ!消して!	.columns は要らないよ!消して!
+TypeError: A object is not subscriptable<tab>'int'<tab>c=int(A[0])+int(A[1])+int(A[2])	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+ValueError: too many values to unpack (expected A)<tab>3<tab>A,BA,B=map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+ImportError: cannot import name A from B C<tab>'SVR' 'sklearn.neighbors' (/usr/local/li...<tab>from sklearn.neighbors import SVR	@CheckImportPath(A)	@CheckImportPath(A)
+NameError: name A is not defined<tab>'gjろいgじおr'<tab>ｇｊろいｇじおｒ	変数Aを使う前にA=... のように値を代入しよう。	文字列はAのように' 'で囲もう。
+NameError: name A is not defined<tab>'df2e'<tab>df2e.head()	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'n0'<tab>if X%100==0 and X==n0:	変数Aを使う前にA=... のように値を代入しよう。	X==0 に直そう。
+NameError: name A is not defined<tab>'Jリーグ選手身長体重'<tab>df = pd.read_csv(Jリーグ選手身長体重.csv)	文字列名.A(Jリーグ選手身長体重.csv) に直そう。	"df = pd.read_csv(""A.csv"") に直そう。"
+NameError: name A is not defined<tab>'s'<tab>a,b= s.split()	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not subscriptable<tab>'int'<tab>if N[0] == a:	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+ValueError: Length of values (A) does not match length of index (B)<tab>1 643<tab>df4['職業'] = ['Jリーガー']	df[X] = [Y] * len(df) のようにしよう。	df[X] = [Y] * len(df) のようにしよう。
+NameError: name A is not defined<tab>'DecisionTreeRegressior'<tab>model = DecisionTreeRegressior()	DecisionTreeRegressor のスペルミスだよ。	DecisionTreeRegressor のスペルミスだよ。
+AttributeError: A object has no attribute B<tab>'NoneType' 'drop'<tab>df3.drop(5, axis=0, inplace=True)	データフレームがNoneだよ。inplace=True による結果を代入していない?	データフレームがNoneだよ。inplace=True による結果を代入していない?
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>X,Y=map(str,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'columns'<tab>X = df[[columns]]	df.A(columns) に直そう	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'名前'<tab>df_spo = pd.merge(df_J, df_B, on='名前', how='outer')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"KeyError: ""None of A are in the B""<tab>[Index(['tempreture'], dtype='object')] ...<tab>X = df[['tempreture']]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+"FileNotFoundError: A No such file or directory: B<tab>[Errno 2] 'C:\\PyTest'<tab>os.chdir(""C:\\PyTest"") # 作業用ディレクトリを変更"	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+TypeError: A object is not subscriptable<tab>'int'<tab>ans = int(x[0])	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+NameError: name A is not defined<tab>'c'<tab>c== sum(list(map(int, str(A))))	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"NameError: name A is not defined<tab>'mean_squared_error'<tab>print(""MSE(テスト): "", mean_squared_error(y_test, y_pred) )"	関数A を定義しよう。	from sklearn.metrics import A を実行しよう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = TheilSenRegressor(max_depth=8)	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+"KeyError: ""A not in index""<tab>['week_num']<tab>X = df[['week_num','kcal']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+KeyError: A<tab>'weel'<tab>df['weel'].map({	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'str_list'<tab>str_list	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not callable<tab>'DataFrame'<tab>X = df(['kcal','soldout'])	df[['X', 'Y']] ←カンマ注意。	df[['X', 'Y']] ←2重四角括弧だよ。
+NameError: name A is not defined<tab>'model'<tab>model.fit(X_train,y_train)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+FileNotFoundError: A No such file or directory: B<tab>[Errno 2] './data/train.csv'<tab>train = pd.read_csv('./data/train.csv',index_col=['datetime'])	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>X,Y=map(str, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A object is not iterable<tab>'int'<tab>for h in H:	for i in range(A): に直そう。	for i in range(H): に直そう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = KNeighborsRegressor(max_depth=5)	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+TypeError: A object is not subscriptable<tab>'int'<tab>if int(l[i][k])+int(l[j-i][l-k])>=int(l[j-i][l-k])+int(l[i][k]):	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+KeyError: A<tab>'身長'<tab>df4=df4.sort_values(by=' 身長', ascending=False)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: not enough values to unpack (expected A, got B)<tab>6 4<tab>a,b,c,d,x,y = map(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+"KeyError: ""None of A are in the B""<tab>[Index(['教員'], dtype='object')] [columns...<tab>X = df[['教員']]  # 説明変数"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '2 3'<tab>n = int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A() can't convert non-string with explicit base<tab>int<tab>print(int(A,K))	A()の最初の引数は文字列にしてみよう。	A()の最初の引数は文字列にしてみよう。
+KeyError: A<tab>0<tab>print(mount[0])	.iloc[A] じゃない?	.iloc[A] じゃない?
+ImportError: cannot import name A from B C<tab>'randon_split' 'torch.utils.data' (/usr/...<tab>from torch.utils.data import TensorDataset, randon_split	from sklearn.utils import A を実行しよう。	@CheckImportPath(A)
+NameError: name A is not defined<tab>'cross_val_score'<tab>cross_val_score(モデル, X, y, cv=5, scoring='r2')	データフレームのメソッドはA型名Aが間違っているよ。	from sklearn.model_selection import A を実行しよう。
+KeyError: A<tab>'身長'<tab>df3.sort_values(' 身長')	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+TypeError: A object is not iterable<tab>'int'<tab>for s in s:	for s in builtins.s range に直そう。	for s in range(s): に直そう。
+ValueError: too many values to unpack (expected A)<tab>2<tab>S,T=str(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+IndexError: only integers, slices (A), ellipsis (B), numpy.newaxis (C) and integer or boolean arrays are valid indices<tab>`:` `...` `None`<tab>X = df[df.columns['kcal','tempreature']]	.columns は要らないよ!消して!	.columns は要らないよ!消して!
+NotFittedError: This SVC instance is not fitted yet. Call A with appropriate arguments before using this estimator.<tab>'fit'<tab>y_pred = model.predict(X_test)	modelが未学習だから先にfit()しよう。	modelが未学習だから先にfit()しよう。
+NameError: name A is not defined<tab>'df'<tab>df['weather']=df['weather'].map({	df['x']+df['stats.A(df['weather'].A(df['weather'].A)[0] に直そう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'f'<tab>鶏肉とカシューナッツ炒め':4	文字列はA のように' 'で囲もう。	文字列はAのように' 'で囲もう。
+"KeyError: ""None of A are in the B""<tab>[Index(['住'], dtype='object')] [columns]<tab>X = df[[col]]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+"KeyError: ""A not in index""<tab>['curry']<tab>X = df[['soldout','kcal','payday','temperature', 'weather_num','week_num', 'precipitation_num','event_num','remarks_num','name_num','curry','otanoshimi']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+KeyError: A<tab>'教育内容'<tab>plt.boxplot([df['教育内容'], df['通いやすさ'], df['評判の良さ']])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'column'<tab>df.groupby(f'{column}')['G3'].describe()	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '100 80'<tab>A,B=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+AttributeError: A object has no attribute B<tab>'NoneType' 'drop'<tab>df3.drop(5,axis=0,inplace=True)	データフレームがNoneだよ。inplace=True による結果を代入していない?	データフレームがNoneだよ。inplace=True による結果を代入していない?
+ValueError: invalid literal for A() with base B: C<tab>int 10 '123,234'<tab>A,B=map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+ValueError: not enough values to unpack (expected A, got B)<tab>3 1<tab>a,b,c=map(str,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A object is not subscriptable<tab>'type'<tab>print(max(list[e,f,g,h]))	max(str,, p, p, x,y) ←重括弧だよ。	本当にlist変数?
+NameError: name A is not defined<tab>'inbt'<tab>sx,sy,gx,gy = map(inbt,input().strip().split())	map(int,input().split()) に直そう。	intのスペルミスだよ。
+ValueError: not enough values to unpack (expected A, got B)<tab>4 2<tab>N,A,X,Y=(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>a,b= map(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A not supported between instances of B and C<tab>'<' 'list' 'int'<tab>Amin = min(Amin, A[j])	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+ValueError: Length of values (A) does not match length of index (B)<tab>3 643<tab>df4['職業'] = ['プロ野球', 'Jリーガー', '相撲']	df[X] = [Y] * len(df) のようにしよう。	df[X] = [Y] * len(df) のようにしよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'abc'<tab>s=int(input())	map(str, input().split()) に直そう。	map(str, input().split()) に直そう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 ' '<tab>x,y=map(int,input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'x'<tab>if x==0:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'X'<tab>print(X.shape)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"KeyError: ""A not in index""<tab>['築年数']<tab>X = df[['部屋数', '築年数', '交通']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'clumn'<tab>print(f'{clumn}決定係数(R2):', r2)	import matplotlib.A を実行しよう。	column のスペルミスだよ。
+NameError: name A is not defined<tab>'inpit'<tab>S=list(inpit())	変数Aを使う前にA=... のように値を代入しよう。	input のスペルミスだよ。
+AttributeError: A object has no attribute B<tab>DecisionTreeRegressor' 'feature_importa...<tab>model.feature_importance_	feature_importances_のスペルミスだよ。	feature_importances_のスペルミスだよ。
+KeyError: A<tab>'身長'<tab>df3 = df3.sort_values(by=' 身長', ascending=False) #降順	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'str_x_list__'<tab>str_x_list__.reverse()	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"NameError: name A is not defined<tab>'sns'<tab>sns.kdeplot(data=df, x=""工場"", y=""住宅価格"", shade=True, thresh=0.05)"	変数Aを使う前にA=... のように値を代入しよう。	import seaborn as A を実行しよう。
+"TypeError: A() got an unexpected keyword argument B<tab>pivot_table 'ccolumns'<tab>pd.pivot_table(df,index=""血液型"",ccolumns=""身長"")"	columnsのスペルミスだよ。	columnsのスペルミスだよ。
+NameError: name A is not defined<tab>'prit'<tab>prit(a,c)	print のスペルミスだよ。	print のスペルミスだよ。
+NameError: name A is not defined<tab>'ausum'<tab>print(ausum)	sorted(a) に直そう。	変数Aを使う前にA=... のように値を代入しよう。
+FileNotFoundError: A No such file or directory: B<tab>[Errno 2] 'bento_train.csv'<tab>df = pd.read_csv('bento_train.csv')	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+ModuleNotFoundError: No module named A<tab>'pytorch_lightning'<tab>from pytorch_lightning import Trainer	torch_light_Checking_Path(A) に直そう。	!pip install A を実行しよう。
+"KeyError: ""None of A are in the B""<tab>[Index(['temparature'], dtype='object')]...<tab>X_train = df[['temparature']]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+"KeyError: ""A not found in axis""<tab>['ポジション']<tab>df.drop('ポジション' , axis=1)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'column'<tab>x = df[[column]]	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'pd'<tab>df = pd.read_csv('bento_train.csv')	"pd.A(""bento_train.xlsx') ←ピリオド注意。"	import pandas as A を実行しよう。
+AttributeError: A object has no attribute B<tab>DecisionTreeRegressor' 'feature_importe...<tab>model.feature_importences_	feature_importances_のスペルミスだよ。	feature_importances_のスペルミスだよ。
+KeyError: A<tab>'[5] not found in axis'<tab>df3.drop(5,  axis=0, inplace=True)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"KeyError: ""A not in index""<tab>['\\t低所得率']<tab>X = df[['  低所得率','教員比']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+TypeError: A object is not subscriptable<tab>'int'<tab>a=A[0]+A[-1]+A[-2]	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 ' '<tab>aa,bb=map(int,input())	map(str, input().split()) に直そう。	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'sample_list'<tab>mean_lists = [mean_list(S[k]) for k in range(len(sample_list))]	関数A を定義しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'x'<tab>y= relu(x)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'x'<tab>y = x**2 - 2*x + 1	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'名前'<tab>df['名前']	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"TypeError: A() got an unexpected keyword argument B<tab>pivot_table 'colums'<tab>pd.pivot_table(df,index=""血液型"", colums=""身長"",values=""生年"",aggfunc=""count"")"	columnsのスペルミスだよ。	columnsのスペルミスだよ。
+"KeyError: ""A not in index""<tab>['完売フラグ']<tab>X = df[['完売フラグ','気温']]  # 価格以外を全て説明変数に"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+"TypeError: A() got an unexpected keyword argument B<tab>pivot_table 'column'<tab>pd.pivot_table(df, index=""血液型"",column = '身長')"	columnsのスペルミスだよ。	columnsのスペルミスだよ。
+NameError: name A is not defined<tab>'a'<tab>if a%C==0:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: (A, B)<tab>'kcal' 'temperature'<tab>X = df['kcal','temperature']  # 価格以外を全て説明変数に	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+ValueError: not enough values to unpack (expected A, got B)<tab>3 1<tab>k,a,b=map(int,input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A not supported between instances of B and C<tab>'<=' 'str' 'int'<tab>if A <= i <= B:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+NameError: name A is not defined<tab>'PLSRegression'<tab>model = PLSRegression()	from sklearn.linear_model import A を実行しよう。	from sklearn.cross_decomposition import A を実行しよう。
+AttributeError: A object has no attribute B<tab>'list' 'replace'<tab>print(a.replace(x,''))	整数は先に文字列に変換してからBしよう。	Bできるのは文字列だよ。
+IndexError: only integers, slices (A), ellipsis (B), numpy.newaxis (C) and integer or boolean arrays are valid indices<tab>`:` `...` `None`<tab>X = df[df.columns[df.dropna(axis=1)]]	.columns は要らないよ!消して!	.columns は要らないよ!消して!
+"NameError: name A is not defined<tab>'message'<tab>print(""文字列の文字数: "" + str(len(message)))"	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not subscriptable<tab>'int'<tab>x+=int(str(A[i]))	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+TypeError: A() must have at least two arguments.<tab>map<tab>K, S= map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+"KeyError: ""A not found in axis""<tab>['weather_num']<tab>df_2.drop(""weather_num"", axis=1)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+"KeyError: ""A not in index""<tab>['datetime_num']<tab>X = df_2[['weather_num','temperature','datetime_num']]  # 説明変数"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+ValueError: Length of values (A) does not match length of index (B)<tab>644 643<tab>df['職業'] =['Jリーガー']*644	df[X] = [Y] * len(df) のようにしよう。	df[X] = [Y] * len(df) のようにしよう。
+TypeError: A object is not subscriptable<tab>'int'<tab>print(int(X)+S[0])	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+"NameError: name A is not defined<tab>'_test'<tab>print(""MSE: "", mean_squared_error(_test, y_pred))"	関数Aを定義しよう。	変数Aを使う前にA=... のように値を代入しよう。
+AttributeError: module A has no attribute B<tab>'math' 'sprt'<tab>math.sprt(ans)	spr のスペルミスだよ。	sqrtのスペルミスだよ。
+NameError: name A is not defined<tab>'r2_score'<tab>r2= r2_score(y, y_pred)	r2_score のスペルミスだよ。	from sklearn.metrics import A を実行しよう。
+TypeError: A object is not subscriptable<tab>'int'<tab>return x[0]+x[1]+x[2]	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+NameError: name A is not defined<tab>'student'<tab>df = pd.read_csv(student-mat.csv)	pd.A_csv に直そう。	文字列はAのように' 'で囲もう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '80,94'<tab>X,Y=map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+AttributeError: A object has no attribute B<tab>'function' 'sum'<tab>df.isnull.sum()	df.sum() に直そう。	df.isnull().sum() に直そう。
+TypeError: A object is not subscriptable<tab>'int'<tab>x = A[1]+A[2]+A[3]	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+FileNotFoundError: A No such file or directory: B<tab>[Errno 2] 'boston.csv '<tab>pd.read_csv('boston.csv ')	Bというファイルが存在するか確認して!	Bというファイルが存在するか確認して!
+NameError: name A is not defined<tab>'n'<tab>sum=n(n+1)/2	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'replace'<tab>n=replace(1,9) and replace(9,1)	変数Aを使う前にA=... のように値を代入しよう。	Aは、文字列名.A() のように操作する文字列が必要だよ。
+NameError: name A is not defined<tab>'Pipeline'<tab>model = Pipeline([('poly', PolynomialFeatures(degree=2)),('linear', LinearRegression())])	from sklearn.preprocessing import A を実行しよう。	from sklearn.pipeline import  A を実行しよう。
+NameError: name A is not defined<tab>'KNeighborsRegressor'<tab>model = KNeighborsRegressor(n_neighbors=3)	DecisionTreeRegressor のスペルミスだよ。	from sklearn.neighbors import A  を実行しよう。
+AttributeError: A object has no attribute B<tab>'LinearRegression' 'tree_'<tab>plot_tree(model, feature_names=df.columns[:-1], filled=True)	線形回帰は決定木じゃないよ!	線形回帰は決定木じゃないよ!
+"KeyError: ""A not in index""<tab>['kacal']<tab>X = df[['curry','kacal']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'s'<tab>print(s.replace('9', '1').replace('1', '9'))	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'y_pred'<tab>mse = mean_squared_error(y, y_pred)	予測データがまだAに代入されていないよ。	予測データがまだAに代入されていないよ。
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>x,y = map(int,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+ValueError: invalid literal for A() with base B: C<tab>int 10 '123 234'<tab>t=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'key'<tab>keys_list = list(set(keys_list(key)))       # 重複をなくす	関数Aを定義しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'f'<tab>f=f^2+2*f+3	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'token'<tab>print(token)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'list_w'<tab>print(wakachi(list_w,'吾輩は猫である。名前はまだない。'))	文字列はAのように' 'で囲もう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'ferelibenterhominesidquodvoluntcredunt'<tab>a = ferelibenterhominesidquodvoluntcredunt	floatelibscore のスペルミス に直そう。	文字列はAのように' 'で囲もう。
+NameError: name A is not defined<tab>'plt'<tab>plt.figure(figsize=(7, 7))	import matplotlib.pyplot as A を実行しよう。	import matplotlib.pyplot as A を実行しよう。
+KeyError: A<tab>'女性'<tab>plt.hist(df['女性'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+AttributeError: type object A has no attribute B<tab>'int' 'input'<tab>a,b=map(int(int.input().split()))	map(A, B().split()) ←カンマ注意。	map(A, B().split()) ←カンマ注意。
+NameError: name A is not defined<tab>'plt'<tab>plt.boxplot([df['G1'], df['G2'], df['G3']])	import matplotlib.pyplot as A を実行しよう。	import matplotlib.pyplot as A を実行しよう。
+NameError: name A is not defined<tab>'datetime'<tab>type(datetime)	変数Aを使う前にA=... のように値を代入しよう。	import A を実行しよう。
+"NameError: name A is not defined<tab>'mean_squared_error'<tab>print(""MSE: "", mean_squared_error(y, y_pred))"	metrics_error_errorのスペルミスだよ。	from sklearn.metrics import A を実行しよう。
+TypeError: A not supported between instances of B and C<tab>'<' 'str' 'int'<tab>if X[-1]<5:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+"KeyError: ""A not in index""<tab>['tempareture']<tab>X = df[['kcal','tempareture']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'s'<tab>print(digitsum(s))	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'CSS'<tab>s,t =map(int,input().split())	map(str, input().split()) に直そう。	map(str, input().split()) に直そう。
+AttributeError: A object has no attribute B<tab>'Series' 'info'<tab>df['precipitation'].info()	データフレームにBというメソッドはないよ。	B()はデータフレームのメソッドだよ。
+NameError: name A is not defined<tab>'Pipeline'<tab>model =Pipeline([('poly', PolynomialFeatures(degree=5)),('linear', LinearRegression())])	from sklearn.preprocessing import A を実行しよう。	from sklearn.pipeline import  A を実行しよう。
+NameError: name A is not defined<tab>'a'<tab>a == 0	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'accurancy_score'<tab>accuracy_random_forest = accurancy_score(y_test, y_pred)	from sklearn.metrics import A を実行しよう。	accuracy_score のスペルミスだよ。
+KeyError: (A, B)<tab>'犯罪率' '犯罪率'<tab>X = df[column1, column]	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+TypeError: object of type A has no B()<tab>'int' len<tab>n = (len(N))	B(str(N)) に直そう。	B(str(N)) に直そう。
+TypeError: A object is not subscriptable<tab>'int'<tab>x=(int(A[i])+int(B[i]))	整数は先にfit()しよう。	整数は先に文字列に変換しよう。
+TypeError: A() must have at least two arguments.<tab>map<tab>A,B=map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+NameError: name A is not defined<tab>'datetime'<tab>type(df_2[datetime[0]])	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'身長'<tab>df3.sort_values(' 身長',ascending=True)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'RandomForestRegressor'<tab>model = RandomForestRegressor(max_depth=3)	from sklearn.ensemble import A を実行しよう。	from sklearn.ensemble import A を実行しよう。
+AttributeError: A object has no attribute B<tab>'function' 'split'<tab>A,B,C=map(input.split())	map(int,input().split()) に直そう。	map(input().B()) に直そう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '9 0 1 2 3 4 5 6 7 '<tab>a=list(int(input()))	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+AttributeError: A object has no attribute B<tab>'NoneType' 'sort_values'<tab>df3=df3.sort_values(by='身長', ascending=False)	データフレームがNoneだよ。inplace=False による結果を代入していない?	データフレームがNoneだよ。inplace=True による結果を代入していない?
+NameError: name A is not defined<tab>'a'<tab>res = min(res, a[i] + b[j] if i == j else max(a[i], b[j]))	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"KeyError: ""A not found in axis""<tab>['ポジション']<tab>df=df.drop('ポジション')"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'haa'<tab>S=str(haa)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'temperature'<tab>X = df['temperature']	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NotFittedError: This LinearRegression instance is not fitted yet. Call A with appropriate arguments before using this estimator.<tab>'fit'<tab>y_pred = model.predict(X)	modelがおかしいよ。	modelが未学習だから先にfit()しよう。
+NameError: name A is not defined<tab>'ss'<tab>ss.append(chr(a))	ss.append のスペルミスだよ。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'train'<tab>X_train = pd.get_dummies(train[['week', 'temperature']])	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A object is not iterable<tab>'NoneType'<tab>mina2=min(a)	min = buitlins.max で初期化してみよう。	min = buitlins.min で初期化してみよう。
+"KeyError: ""None of A are in the B""<tab>'[Index([('犯罪率',), ('犯罪率',)], dtype='obje...<tab>X = df[[[column],[column]]]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+NameError: name A is not defined<tab>'blue'<tab>sns.kdeplot(df.groupby('学習時間').get_group(1)['G3'], shade = True, color = blue)	df のスペルミスだよ。	文字列はAのように' 'で囲もう。
+NameError: name A is not defined<tab>'wakachi'<tab>words.append(wakachi(name))	変数Aを使う前にA=... のように値を代入しよう。	関数Aを定義しよう。
+ValueError: Length of values (A) does not match length of index (B)<tab>1 643<tab>df['職業'] =['Jリーガー']	df[X] = [Y] * len(df) のようにしよう。	df[X] = [Y] * len(df) のようにしよう。
+NameError: name A is not defined<tab>'ss'<tab>ss.append(chr(a))  #リストに追加	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+AttributeError: A object has no attribute B<tab>'int' 'replace'<tab>n1=n.replace('1','*')	整数は先に文字列に変換してからBしよう。	整数は先に文字列に変換してからBしよう。
+TypeError: A object is not subscriptable<tab>'int'<tab>print(N[1,2])	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+"KeyError: ""A not found in axis""<tab>['身長_y']<tab>df3.drop('身長_y', axis=1, inplace=True)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'DiscriptionLinearRegression'<tab>model = DiscriptionLinearRegression()	from sklearn.linear_model import A を実行しよう。	DecisionTreeRegressor のスペルミスだよ。
+TypeError: A object is not subscriptable<tab>'int'<tab>if int(l[i][k])+int(l[j-i][l-k])>=int(l[j-i][k])+int(l[i][l-k]):	整数は先に文字列に変換しよう。	整数は先に文字列に変換しよう。
+NameError: name A is not defined<tab>'K'<tab>if len(S)<=K:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: (A, B)<tab>'部屋数' '低所得'<tab>X = df['部屋数','低所得']	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+NameError: name A is not defined<tab>'train'<tab>week_encoded = train.groupby('week').new_y.median()	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'n_train'<tab>train, val, test = torch.utils.data.random_split(dataset, [n_train, n_val, n_test])	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+KeyError: A<tab>'Column not found: y'<tab>df['y'] = df.groupby('weather')['y'].median()	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+AttributeError: A object has no attribute B<tab>'Net' 'batch_size'<tab>test_loader = DataLoader(test, model.batch_size)	B(map(B_size__size)) に直そう。	B のプロパティはないよ。
+"KeyError: ""A not found in axis""<tab>['ポジション']<tab>df.drop('ポジション',axis=0,inplace=True)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+KeyError: (A, B, C)<tab>'kcal' 'weather' 'temperature'<tab>df['kcal','weather','temperature']	[[A, B, C]] ←2重括弧だよ。	[[A, B, C, D] ←2重括弧だよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '99.9'<tab>N=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'index'<tab>a.pop(index(max(a)))	変数Aを使う前にA=... のように値を代入しよう。	a.pop(a.index(max(a))) かな?
+TypeError: A object is not iterable<tab>'int'<tab>for item in n:	for while n): に直そう。	for item in range(n): に直そう。
+IndexError: only integers, slices (A), ellipsis (B), numpy.newaxis (C) and integer or boolean arrays are valid indices<tab>`:` `...` `None`<tab>X = df[df.columns['kcal']]	.columns は要らないよ!消して!	.columns は要らないよ!消して!
+TypeError: A() got multiple values for argument B<tab>merge 'how'<tab>df4 = pd.merge(df, df2, df3, on='名前',how='outer')	一度に結合できるデータフレームは2つまでだよ。	一度に結合できるデータフレームは2つまでだよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'a'<tab>S,T = map(int,input().split())	問題番号と入力データはあってる?	map(str, input().split()) に直そう。
+ValueError: too many values to unpack (expected A)<tab>2<tab>A,B = str(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+KeyError: A<tab>'身長'<tab>df3.sort_values(['身長'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+KeyError: A<tab>0<tab>df[0]	.iloc[A] じゃない?	.iloc[A] じゃない?
+TypeError: object of type A has no B()<tab>'int' len<tab>for S in range(len(S)):	B(str(S)): translate(S)): に直そう。	B(str(S)) に直そう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '3.456'<tab>x=int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+AttributeError: type object A has no attribute B<tab>'int' 'input'<tab>list=map(int.input().split())	map(A, B().split()) ←カンマ注意。	map(A, B().split()) ←カンマ注意。
+NameError: name A is not defined<tab>'N'<tab>print(N)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'dff3'<tab>dff3	変数Aを使う前にA=... のように値を代入しよう。	df のスペルミスだよ。
+NameError: name A is not defined<tab>'X'<tab>X = torch.tensor(X.values, dtype=torch.float32)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'index_datetime'<tab>X = df[df.columns[:-1]],index_datetime	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NotFittedError: This LinearRegression instance is not fitted yet. Call A with appropriate arguments before using this estimator.<tab>'fit'<tab>model.predict([(4.00,)])	modelが未学習だから先にfit()しよう。	modelが未学習だから先にfit()しよう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = AdaBoostRegressor(max_depth=5)	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+"KeyError: ""A not in index""<tab>['curry']<tab>X_test = df_test[['year', 'day', 'week', 'soldout',  'kcal', 'payday', 'weather' , 'remarks','temperature',""curry""]]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+TypeError: A object is not subscriptable<tab>'int'<tab>n=int(N[2])	A = buitlins.A で初期化してみよう。	整数は先に文字列に変換しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '1011 10100'<tab>B = int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A not supported between instances of B and C<tab>'>=' 'int' 'str'<tab>if len(S) >=  K:	BとCの比較になっちゃているよ。	BとCの比較になっちゃているよ。
+KeyError: A<tab>'kal'<tab>df['kal'].describe	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'atcoder'<tab>S = int(input())	map(str, input().split()) に直そう。	map(str, input().split()) に直そう。
+"KeyError: ""A not in index""<tab>['weather_num', 'tempreture']<tab>df[['kcal','weather_num','tempreture']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+"KeyError: ""A not in index""<tab>['week_num', 'weather_num']<tab>X = df[['week_num','weather_num','payday','temperature','kcal','soldout']]  # 価格以外を全て説明変数に"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'S'<tab>S.replace('1','x').replace('9','1').replace('x','1')	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'column'<tab>plt.hist(df[column], df['住宅価格'], bins=20)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A() must have at least two arguments.<tab>map<tab>A,B=list(map( input().split()))	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+NameError: name A is not defined<tab>'b'<tab>li=[a,b,c]	変数Aを使う前にA=... のように値を代入しよう。	文字列はAのように' 'で囲もう。
+NameError: name A is not defined<tab>'ABCDEFGHIJKLMNOPQRSTUVWXYZ'<tab>a=[ABCDEFGHIJKLMNOPQRSTUVWXYZ]	変数Aを使う前にA=... のように値を代入しよう。	文字列はAのように' 'で囲もう。
+"KeyError: ""None of [Index([(A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z...<tab>0.00632 0.02731 0.02729 0.03237 0.06905 ...<tab>X = df[[df[i], df[n]]]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+KeyError: A<tab>'身長'<tab>df4.sort_values(by=' 身長', ascending=False)	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'ans'<tab>A*ans>=B	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"KeyError: ""A not in index""<tab>['教育比']<tab>X = df[['部屋数', '教育比', '資産税']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+TypeError: A object is not callable<tab>'int'<tab>sum=n(n+1)/2	整数は先に文字列に変換しよう。	X * (Y) ← 乗算演算子が必要だよ。
+NameError: name A is not defined<tab>'t'<tab>print(t)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+"KeyError: ""A not in index""<tab>['低所得理']<tab>X = df[['低所得理', '資産税']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'head'<tab>df(head)	df.head のスペルミスだよ。	df.head() に直そう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '3 4 9 0'<tab>k = int(input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'column'<tab>plt.hist(df[column], bins=20)	import matplotlib.pyplot as A を実行しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'train'<tab>train_loader = DataLoader(train, batch_size, shuffle=True)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A() must have at least two arguments.<tab>map<tab>A,B,C=map(input().split())	A(int, input().split()) に直そう。	A(int, input().split()) に直そう。
+"KeyError: ""None of A are in the B""<tab>[Index(['weather'], dtype='object', name...<tab>X = df[['weather']]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+KeyError: A<tab>'女性'<tab>plt.hist(df['女性'],df['G3'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'kogi_login'<tab>kogi_login(ai_key='1fnp38_4EYzTU39qtvj7QWbWZ1c5XFw_m', class_name='atcoder')	関数Aを定義しよう。	関数Aを定義しよう。
+TypeError: A object is not subscriptable<tab>'int'<tab>print(A[0])	A = buitlins.Aで初期化してみよう。	整数は先に文字列に変換しよう。
+NameError: name A is not defined<tab>'weather'<tab>weather_num=int(weather)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'i'<tab>for column in df.columns[i]:	i: に直そう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: not enough values to unpack (expected A, got B)<tab>2 1<tab>a,b =map(str,input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'o'<tab>if S[a]==o:	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 '123,112'<tab>A,B=map(int, input().split())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+TypeError: A() can't convert non-string with explicit base<tab>int<tab>a=int(A,K)	A()の最初の引数は文字列にしてみよう。	A()の最初の引数は文字列にしてみよう。
+"KeyError: ""A not in index""<tab>['detetime']<tab>df = df[['detetime','y','name','week','soldout','kcal','remarks','event','weather','temperature','payday','precipitation']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+KeyError: A<tab>'weather'<tab>df_weather = pd.get_dummies(df['weather'], dummy_na=False, columns=['weather'])	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+ValueError: too many values to unpack (expected A)<tab>2<tab>S,T = input()	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+"KeyError: ""A not in index""<tab>['教員']<tab>X = df[['通勤', '教員']]  # 説明変数"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'sqrt'<tab>ans_1 = (1+sqrt(1-4*1*(-2)*c))/2	from math import A を実行しよう。	math.A に直そう。
+AttributeError: A object has no attribute B<tab>'int' 'replace'<tab>print(n.replace(1,9).replace(9,1))	整数は先に文字列に変換してからBしよう。	整数は先に文字列に変換してからBしよう。
+KeyError: A<tab>'datetid'<tab>df['datetid']	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"IndexError: only integers, slices (A), ellipsis (B), numpy.newaxis (C) and integer or boolean arrays are valid indices<tab>`:` `...` `None`<tab>X = df[df.columns[""soldout"",""name"",""kcal"",""weather"",""precipitation"",""tempreature""]]"	.columns は要らないよ!よだよ。	.columns は要らないよ!消して!
+AttributeError: A object has no attribute B<tab>'NoneType' 'drop'<tab>df3 = df3.drop(5,axis=0)	データフレームがNoneだよ。inplace=True による結果を代入していない?	データフレームがNoneだよ。inplace=True による結果を代入していない?
+ValueError: too many values to unpack (expected A)<tab>2<tab>N,X=map(str,input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'liset'<tab>print(liset(row))	print のスペルミスだよ。	list のスペルミスだよ。
+NameError: name A is not defined<tab>'colums3'<tab>X = df[[column, column2,colums3]] #1つ選ぶ	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+TypeError: A() got an unexpected keyword argument B<tab>__init__ 'max_depth'<tab>model = MLPRegressor(max_depth=5)	Bはこのモデルには存在しないハイパーパラメータだよ。	Bはこのモデルには存在しないハイパーパラメータだよ。
+KeyError: A<tab>'df_week'<tab>df['week'] = df['df_week']	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+"KeyError: ""A not in index""<tab>['wether_num']<tab>df[['kcal','wether_num','temperature']]"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+NameError: name A is not defined<tab>'l'<tab>x = fc1(l)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+NameError: name A is not defined<tab>'mode_L'<tab>y_train_pred= mode_L.predict(X)	変数Aを使う前にA=... のように値を代入しよう。	model のスペルミスだよ。
+"KeyError: ""A not found in axis""<tab>['ポジション']<tab>df.drop('ポジション')"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+TypeError: object of type A has no B()<tab>'int' len<tab>if len(S)<=K:	B(str(S)) に直そう。	B(str(S)) に直そう。
+ValueError: invalid literal for A() with base B: C<tab>int 10 ' '<tab>a,b=map(int,input())	問題番号と入力データはあってる?	問題番号と入力データはあってる?
+NameError: name A is not defined<tab>'kogi_login'<tab>kogi_login()	関数Aを定義しよう。	関数Aを定義しよう。
+KeyError: (A, B)<tab>'kcal' 'tempreature'<tab>X = df['kcal','tempreature']	[[A, B]] ←2重括弧だよ。	[[A, B]] ←2重括弧だよ。
+ValueError: Length of values (A) does not match length of index (B)<tab>1 643<tab>df['職業'] = ['']	df[X] = [Y] * len(df) のようにしよう。	df[X] = [Y] * len(df) のようにしよう。
+"KeyError: ""A not found in axis""<tab>['投']<tab>df2.drop('投',axis=1,inplace=True)"	データフレームの列名Aが間違っているよ。	データフレームの列名Aが間違っているよ。
+ValueError: invalid literal for A() with base B: C<tab>int 10 'aSeR'<tab>N=int(input())	問題番号と入力データはあってる?	map(str, input().split()) に直そう。
+"KeyError: ""None of A are in the B""<tab>[Index(['築年数'], dtype='object')] [column...<tab>X = df[['築年数']]"	データフレームに存在しない列名を使っているよ。	データフレームに存在しない列名を使っているよ。
+NameError: name A is not defined<tab>'train_Numa_print'<tab>X_train_numa_p = pd.read_csv('https://drive.google.com/file/d/1yWj9QG29CmUOufrvE2NITNBxwRlRtD7g/view?usp=sharing'/train_Numa_print.csv)	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
+ModuleNotFoundError: No module named A<tab>'Pytorch_lightning'<tab>from Pytorch_lightning import Trainer	from sklearn.lightning' import A を実行しよう。	A を pytorch_lightning に直そう。
+KeyError: A<tab>'体重'<tab>df3['体重']=df3['体重'].fillna(df3['体重'].mean())	データフレームにAという列はないよ。	データフレームにAという列はないよ。
+NameError: name A is not defined<tab>'n'<tab>A = [0 for i in range(n)]	変数Aを使う前にA=... のように値を代入しよう。	変数Aを使う前にA=... のように値を代入しよう。
