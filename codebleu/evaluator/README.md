@@ -7,6 +7,8 @@
   - 実行スクリプト(calc_code_bleu.pyがあるCodeBLEUの階層で実行する)
   ```
   python3 calc_code_bleu.py --refs Testfile/reff.txt --hyp Testfile/hypp.txt --lang python
+  
+  (FixEvalメモ)python3 calc_code_bleu.py --ref /home/acd13734km/eval/CodeBLEU/CodeBLEU/Testfile/hypp.txt --hyp /home/acd13734km/eval/CodeBLEU/CodeBLEU/Testfile/reff.txt --lang python
   ```
   
   - 評価する正解・生成コードはCodeBLEU/Testfile/に、各々テキストファイル形式で与える
