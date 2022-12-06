@@ -25,13 +25,15 @@
   ```
   module load gcc/9.3.0 python/3.8 cuda/11.2 cudnn/8.1
   ```
-  - CodeBLEU/parserの階層で、tree-sitter-pythonをgit cloneする
+  - CodeBLEU/parserの階層で、vendor/tree-sitter-pythonをgit cloneする
+  - CodeBLEU/parserの階層でbuild/my-languages.soを作成
   
   [tree-sitterのGithub URL] https://github.com/tree-sitter/py-tree-sitter
   
+  
   ★不安ポイント：syntax_match.pyにて、tree-sitterは元のJavaからPythonに変えたけど、それ以外は特に変えていないこと...
   ```
-  pip3 install tree-sitter
+ 　　tree-sitter-0.20.1
   
   git clone https://github.com/tree-sitter/tree-sitter-python
   ```
