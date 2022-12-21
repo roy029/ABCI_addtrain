@@ -18,6 +18,4 @@ Language.build_library(
     'tree-sitter-c-sharp',
   ]
 )
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
+
