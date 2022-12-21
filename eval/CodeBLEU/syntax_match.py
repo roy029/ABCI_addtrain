@@ -14,10 +14,10 @@ import os
 
 Language.build_library(
   # Store the library in the `build` directory
-  'my-languages.so',
+  'parser/build/my-languages.so',
 
   # Include one or more languages
-  ['parser/tree-sitter-python']
+  ['parser/vender/tree-sitter-python']
 )
 
 root_dir = os.path.dirname(__file__)
