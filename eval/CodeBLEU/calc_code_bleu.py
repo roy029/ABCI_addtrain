@@ -31,7 +31,7 @@ def get_codebleu(refs, hyp, lang, params='0.25,0.25,0.25,0.25'):
 
     # calculate weighted ngram match
     # root_dir = os.path.dirname(__file__)
-    root_dir = "/home/acd13734km/Retake/Git/git/ABCI_addtrain/codebleu/evaluator/CodeBLEU" #適宜書き換えて
+    root_dir = ""/content/ABCI_addtrain/eval/CodeBLEU"" #CodeBLEUのパスを適宜書き換えてください
     keywords = [x.strip() for x in open(root_dir + '/keywords/' + lang + '.txt', 'r', encoding='utf-8').readlines()]
 
     def make_weights(reference_tokens, key_word_list):
