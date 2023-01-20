@@ -24,14 +24,23 @@ Language.build_library(
 
 root_dir = os.path.dirname(__file__)
 
+# dfg_function = {
+#     'python': DFG_python,
+#     'java': DFG_java,
+#     'ruby': DFG_ruby,
+#     'go': DFG_go,
+#     'php': DFG_php,
+#     'javascript': DFG_javascript,
+#     'c_sharp': DFG_csharp,
+# }
 dfg_function = {
     'python': DFG_python,
-    'java': DFG_java,
-    'ruby': DFG_ruby,
-    'go': DFG_go,
-    'php': DFG_php,
-    'javascript': DFG_javascript,
-    'c_sharp': DFG_csharp,
+#     'java': DFG_java,
+#     'ruby': DFG_ruby,
+#     'go': DFG_go,
+#     'php': DFG_php,
+#     'javascript': DFG_javascript,
+#     'c_sharp': DFG_csharp,
 }
 
 
