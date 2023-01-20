@@ -14,7 +14,8 @@ import os
 
 Language.build_library(
   # Store the library in the `build` directory
-  'parser/build/my-languages.so',
+#   'parser/build/my-languages.so',
+  'my-languages.so',
 
   # Include one or more languages
   ['parser/vender/tree-sitter-python']
